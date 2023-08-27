@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!-- j2n6s200 refers to jaco v2 6DOF non-spherical 2fingers -->
+
+
+<robot xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:xacro="http://ros.org/wiki/xacro" name="j2n6s200">
+
+
+  <xacro:include filename="$(find ada_description)/robots/j2n6s200.xacro"/>
+  <xacro:include filename="$(find ada_description)/robots/camera.xacro"/>
+  <xacro:include filename="$(find ada_description)/robots/forque.xacro"/>
+
+  <xacro:arg name="with_camera" default="false" />
+  <xacro:arg name="with_forque" default="false" />
+
+  <link name="world"/>
+  <xacro:property name="robot_root" value="world" />
+  <xacro:property name="prefix" value="j2n6s200" />
+
+  <xacro:j2n6s200  base_parent="${robot_root}" hide_final_ring="$(arg with_camera)"/>
+  <!--xacro:j2n6s200  base_parent="${robot_root}" /-->
+
+  <xacro:if value="$(arg with_camera)">
+    <xacro:camera  camera_parent="${prefix}_link_6"/>
+  </xacro:if>
+
+  <xacro:if value="$(arg with_forque)">
+    <xacro:forque  forque_parent="${prefix}_end_effector"/>
+  </xacro:if>
+</robot>

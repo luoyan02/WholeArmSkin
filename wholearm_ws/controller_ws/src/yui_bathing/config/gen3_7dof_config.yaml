@@ -1,0 +1,8 @@
+# ADA configuration overrides
+# TODO: Add wiper to urdf
+default_urdf: package://kortex_description/robots/gen3_7dof.urdf
+default_srdf: package://kortex_description/robots/gen3_7dof.srdf
+# TODO: read EE, arm, and hand from SRDF
+# TODO: update end effector to wiper link
+end_effector: end_effector_link
+arm_controller: trajectory_controller

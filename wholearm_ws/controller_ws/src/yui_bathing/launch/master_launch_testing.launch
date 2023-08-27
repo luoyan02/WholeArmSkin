@@ -1,0 +1,5 @@
+<launch>
+<include file="$(find yui_bathing)/launch/viz.launch"/>
+<include file="$(find wholearm_skin_ros)/launch/testing.launch"/>
+<node name="rviz" pkg="rviz" type="rviz" args="-d $(find yui_bathing)/config/skin.rviz"/>
+</launch>

@@ -1,0 +1,7 @@
+---
+    hand:
+        closed: [1.0]
+        open: [0.0]
+        partial_open: [0.5]
+        almost_closed: [0.8]
+    

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!-- j2_6n refers to jaco v2 6DOF non-spherical -->
+
+
+<root xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:macro name="camera" params="camera_parent prefix:=j2n6s200">
+
+    <link name="${prefix}_joule">
+      <visual>       
+        <origin  rpy="0 0 0" xyz="-0.014 -0.062 -0.023"  />
+        <geometry>
+          <mesh filename="package://ada_description/meshes/camera_joule.dae" scale="0.001 0.001 0.001"/>
+          <!-- <mesh filename="package://ada_description/meshes/collision_camera_joule.dae" scale="0.001 0.001 0.00098"/> -->
+        </geometry>
+      <material name="carbon_fiber">
+          <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
+        </material>
+      </visual>
+      <collision>
+        <origin rpy="0 0 0" xyz="-0.008 -0.055 0.01"/>
+        <geometry>
+          <mesh filename="package://ada_description/meshes/collision_camera_joule.dae" scale="0.0008 0.00076 0.0006"/>
+        </geometry>
+      </collision>
+    </link>
+    <joint name="${prefix}_joule" type="fixed">
+      <parent link="${camera_parent}"/>
+      <child link="${prefix}_joule"/>
+      <axis xyz="0 0 1"/>
+      <limit effort="2000" lower="-6.28318530718" upper="6.28318530718" velocity="1"/>
+      <origin rpy="1.57079632679 1.57079632679 0" xyz="0.06 0.051 0.0140"/>
+      <dynamics damping="0.0" friction="0.0"/>
+    </joint>
+
+  </xacro:macro>
+
+
+</root>

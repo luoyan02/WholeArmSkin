@@ -1,0 +1,1 @@
+/home/emprise/wholearm_ws/controller_ws/devel/.private/pr_ros_controllers/share/pr_ros_controllers/cmake/pr_ros_controllersConfig-version.cmake

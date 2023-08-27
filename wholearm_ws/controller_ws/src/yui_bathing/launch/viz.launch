@@ -1,0 +1,30 @@
+<launch>
+  <!-- Base Args -->
+  <arg name="sim" default="false" doc="Whether to run in Aikido-sim only" />
+  <arg name="version" default="3" doc="Kinova Arm Version (JACO = 2, Kortex = 3)" />
+  <arg name="dof" default="7" />
+  <arg name="use_wiper" default="false" />
+  <arg name="use_apriltag_calib" value="$(eval not arg('sim'))" />
+  <arg name="use_admittance" default="true" doc="Set to true when using Kinova-provided admittance mode"/>
+
+  <!-- Feeding Args -->
+  <arg name="autoRestart" default="false" doc="Whether to restart behavior tree at end without command line input." />
+  <arg name="treeFile" default="feeding.xml" doc="BT root XML, from package://yui_bathing/trees" />
+
+  <!-- Libada Config -->
+  <include file="$(find libada)/launch/libada.launch" pass_all_args="true" />
+  <!-- Libada Overrides -->
+  <rosparam file="$(find yui_bathing)/config/gen$(arg version)_$(arg dof)dof_config.yaml" command="load" ns="adaConf" />
+
+  <!-- Additional feeding-specific controllers -->
+  <group unless="$(arg sim)" >
+    <rosparam file="$(find yui_bathing)/config/gen$(arg version)_bathing_controllers.yaml" command="load" />
+    <node name="wiper_controller_spawner_stopped" pkg="controller_manager" type="spawner" respawn="false"
+            output="screen"
+            args="
+               --stopped
+               trajectory_controller
+               " />
+  </group>
+
+</launch>

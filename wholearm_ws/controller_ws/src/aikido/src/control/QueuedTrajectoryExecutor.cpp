@@ -1,0 +1,141 @@
+#include "aikido/control/QueuedTrajectoryExecutor.hpp"
+
+#include <chrono>
+
+#include "aikido/control/util.hpp"
+
+namespace aikido {
+namespace control {
+
+//==============================================================================
+QueuedTrajectoryExecutor::QueuedTrajectoryExecutor(
+    std::shared_ptr<TrajectoryExecutor> executor)
+  : TrajectoryExecutor(
+      checkNull(executor)->getDofs(), checkNull(executor)->getTypes())
+  , mExecutor{executor}
+  , mInProgress{false}
+  , mMutex{}
+{
+  // Executor already check with checkNull
+  stop();
+
+  // Use our thread instead
+  mExecutor->stop();
+
+  // register Dofs from here instead
+  mExecutor->releaseDofs();
+  registerDofs();
+}
+
+//==============================================================================
+QueuedTrajectoryExecutor::~QueuedTrajectoryExecutor()
+{
+  stop();
+}
+
+//==============================================================================
+void QueuedTrajectoryExecutor::validate(const trajectory::Trajectory* traj)
+{
+  mExecutor->validate(traj);
+}
+
+//==============================================================================
+std::future<void> QueuedTrajectoryExecutor::execute(
+    const trajectory::ConstTrajectoryPtr& traj)
+{
+  validate(traj.get());
+
+  {
+    std::lock_guard<std::mutex> lock(mMutex);
+    DART_UNUSED(lock); // Suppress unused variable warning
+
+    // Queue the trajectory and promise that will need to be set
+    mTrajectoryQueue.push(std::move(traj));
+    mPromiseQueue.emplace(new std::promise<void>());
+    return mPromiseQueue.back()->get_future();
+  }
+}
+
+//==============================================================================
+void QueuedTrajectoryExecutor::step(
+    const std::chrono::system_clock::time_point& timepoint)
+{
+  mExecutor->step(timepoint);
+
+  std::lock_guard<std::mutex> lock(mMutex);
+  DART_UNUSED(lock); // Suppress unused variable warning
+
+  // If a trajectory was executing, check if it has finished
+  if (mInProgress)
+  {
+    // Return if the trajectory is still executing
+    if (mFuture.wait_for(std::chrono::seconds(0)) != std::future_status::ready)
+      return;
+
+    mInProgress = false;
+
+    // The promise corresponding to the trajectory that just finished must be
+    // at the front of its queue.
+    auto promise = mPromiseQueue.front();
+    mPromiseQueue.pop();
+
+    // Propagate the future's value or exception to the caller
+    try
+    {
+      mFuture.get();
+      promise->set_value();
+    }
+    catch (const std::exception& e)
+    {
+      promise->set_exception(std::current_exception());
+      cancel();
+    }
+  }
+
+  // No trajectory currently executing, execute a trajectory from the queue
+  if (!mTrajectoryQueue.empty())
+  {
+    trajectory::ConstTrajectoryPtr traj = mTrajectoryQueue.front();
+    mTrajectoryQueue.pop();
+
+    mFuture = mExecutor->execute(std::move(traj));
+    mInProgress = true;
+  }
+}
+
+//==============================================================================
+void QueuedTrajectoryExecutor::cancel()
+{
+  std::lock_guard<std::mutex> lock(mMutex);
+  DART_UNUSED(lock); // Suppress unused variable warning
+
+  std::exception_ptr cancel
+      = std::make_exception_ptr(std::runtime_error("Trajectory canceled."));
+
+  if (mInProgress)
+  {
+    mExecutor->cancel();
+
+    // Set our own exception, since cancel may not be supported
+    auto promise = mPromiseQueue.front();
+    mPromiseQueue.pop();
+    promise->set_exception(cancel);
+
+    mInProgress = false;
+  }
+
+  // Trajectory and promise queue are now the same length
+  while (!mPromiseQueue.empty())
+  {
+    auto promise = mPromiseQueue.front();
+    mPromiseQueue.pop();
+    promise->set_exception(cancel);
+
+    mTrajectoryQueue.pop();
+  }
+
+  mFuture = std::future<void>();
+}
+
+} // namespace control
+} // namespace aikido

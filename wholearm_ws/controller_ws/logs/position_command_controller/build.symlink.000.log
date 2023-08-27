@@ -1,0 +1,4 @@
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/lib/libposition_command_controller.so
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/lib/pkgconfig/position_command_controller.pc
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/share/position_command_controller/cmake/position_command_controllerConfig-version.cmake
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/share/position_command_controller/cmake/position_command_controllerConfig.cmake

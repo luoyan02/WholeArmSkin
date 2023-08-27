@@ -1,0 +1,1 @@
+/home/emprise/wholearm_ws/controller_ws/devel/.private/pr_assets/lib/pkgconfig/pr_assets.pc

@@ -1,0 +1,40 @@
+Not searching for unused variables given on the command line.
+[36m--[0m The C compiler identification is GNU 9.4.0
+[36m--[0m The CXX compiler identification is GNU 9.4.0
+[36m--[0m Check for working C compiler: /usr/bin/cc
+[36m--[0m Check for working C compiler: /usr/bin/cc -- works
+[36m--[0m Detecting C compiler ABI info
+[36m--[0m Detecting C compiler ABI info - done
+[36m--[0m Detecting C compile features
+[36m--[0m Detecting C compile features - done
+[36m--[0m Check for working CXX compiler: /usr/bin/c++
+[36m--[0m Check for working CXX compiler: /usr/bin/c++ -- works
+[36m--[0m Detecting CXX compiler ABI info
+[36m--[0m Detecting CXX compiler ABI info - done
+[36m--[0m Detecting CXX compile features
+[36m--[0m Detecting CXX compile features - done
+[36m--[0m Found PythonInterp: /home/emprise/miniconda3/envs/openmmlab/bin/python3.8 (found suitable version "3.8.16", minimum required is "3.8")
+[36m--[0m Found PythonLibs: /home/emprise/miniconda3/envs/openmmlab/lib/libpython3.8.so (found suitable version "3.8.16", minimum required is "3.8")
+[36m--[0m Found PythonLibs: /home/emprise/miniconda3/envs/openmmlab/lib/libpython3.8.so
+[36m--[0m Found ccd: /usr/include (found suitable version "2.0", minimum required is "2.0")
+[36m--[0m Found fcl: /opt/ros/noetic/include (found suitable version "0.6.1", minimum required is "0.3.2")
+[36m--[0m Found assimp: /usr/include (found version "5.0.0")
+[36m--[0m Found DART: /usr/include (Required is at least version "6.8.5") found components: utils utils-urdf optimizer-nlopt dart
+[36m--[0m Found aikido: /home/emprise/wholearm_ws/controller_ws/devel/include (Required is at least version "0.3.0") found components: common constraint control control_ros distance planner planner_kunzretimer planner_ompl planner_parabolic planner_vectorfield planner_kunzretimer robot robot_ros statespace io rviz
+[36m--[0m Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0")
+[36m--[0m Performing Test HAS_FLTO
+[36m--[0m Performing Test HAS_FLTO - Success
+[36m--[0m LTO enabled
+[36m--[0m Looking for pthread.h
+[36m--[0m Looking for pthread.h - found
+[36m--[0m Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[36m--[0m Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[36m--[0m Looking for pthread_create in pthreads
+[36m--[0m Looking for pthread_create in pthreads - not found
+[36m--[0m Looking for pthread_create in pthread
+[36m--[0m Looking for pthread_create in pthread - found
+[36m--[0m Found Threads: TRUE
+[36m--[0m Looking for clang-format - NOT found, please install clang-format-6.0 to enable automatic code formatting.
+[36m--[0m Configuring done
+[36m--[0m Generating done
+[36m--[0m Build files have been written to: /home/emprise/wholearm_ws/controller_ws/build/libada

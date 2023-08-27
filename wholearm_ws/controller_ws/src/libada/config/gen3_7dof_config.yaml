@@ -1,0 +1,11 @@
+# Arm configuration parameters
+default_urdf: package://kortex_description/robots/gen3_7dof.urdf
+default_srdf: package://kortex_description/robots/gen3_7dof.srdf
+default_accel_lim: 2.0
+default_vel_lim: 0.7
+end_effector: robotiq_arg2f_base_link
+arm: [base_link, bracelet_link]
+hand_base: robotiq_arg2f_base_link
+arm_controller: trajectory_controller
+hand_controller: hand_controller
+named_configs: package://libada/resources/g3_7d_named_configs.yaml

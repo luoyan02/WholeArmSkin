@@ -1,0 +1,48 @@
+<launch>
+  <!-- Base Args -->
+  <arg name="sim" default="false" doc="Whether to run in Aikido-sim only" />
+  <arg name="version" default="2" doc="Kinova Arm Version (JACO = 2, Kortex = 3)" />
+  <arg name="dof" default="7" />
+  <arg name="use_wiper" default="false" />
+  <arg name="use_apriltag_calib" value="$(eval not arg('sim'))" />
+
+  <!-- Feeding Args -->
+  <arg name="autoRestart" default="false" doc="Whether to restart behavior tree at end without command line input." />
+  <arg name="treeFile" default="bathing.xml" doc="BT root XML, from package://yui_bathing/trees" />
+
+  <!-- Libada Config -->
+  <include file="$(find libada)/launch/libada.launch" pass_all_args="true" />
+  <!-- Libada Overrides -->
+  <rosparam file="$(find yui_bathing)/config/gen$(arg version)_$(arg dof)dof_config.yaml" command="load" ns="adaConf" />
+
+  <!-- Additional feeding-specific controllers -->
+  <group unless="$(arg sim)" >
+    <rosparam file="$(find yui_bathing)/config/gen$(arg version)_bathing_controllers.yaml" command="load" />
+    <node name="wiper_controller_spawner_stopped" pkg="controller_manager" type="spawner" respawn="false"
+            output="screen"
+            args="
+               --stopped
+               trajectory_controller
+               " />
+  </group>
+
+  <!-- Launch Feeding Binary -->
+  <node name="feeding"
+          pkg="yui_bathing"
+          type="feeding"
+          output="screen"
+          required="true">
+    <remap from="~watchdog" to="/watchdog" />
+    <remap from="~food_detector" to="/food_detector/marker_array" />
+    <remap from="~face_detector" to="/face_detector/marker_array" />
+    <remap from="~food_request" to="/alexa_msgs" />
+    <param name="sim" value="$(arg sim)" />
+    <param name="dof" value="$(arg dof)" />
+    <param name="use_wiper" value="$(arg use_wiper)" />
+    <param name="use_forque" value="false" />
+    <param name="autoRestart" value="$(arg autoRestart)" />
+    <param name="treeFile" value="$(find yui_bathing)/trees/$(arg treeFile)" />
+    <rosparam file="$(find yui_bathing)/config/gen$(arg version)_feeding_config.yaml" command="load" />
+  </node>
+
+</launch>

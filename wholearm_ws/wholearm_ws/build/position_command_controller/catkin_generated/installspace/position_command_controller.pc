@@ -1,0 +1,8 @@
+prefix=/home/emprise/wholearm_ws/wholearm_ws/install
+
+Name: position_command_controller
+Description: Description of position_command_controller
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lposition_command_controller
+Requires: actionlib actionlib_msgs controller_interface pr_control_msgs pr_hardware_interfaces realtime_tools

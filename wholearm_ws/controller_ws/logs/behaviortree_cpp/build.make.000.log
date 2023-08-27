@@ -1,0 +1,127 @@
+[35m[1mScanning dependencies of target lexy_file[0m
+[  1%] [32mBuilding CXX object 3rdparty/lexy/src/CMakeFiles/lexy_file.dir/input/file.cpp.o[0m
+[  2%] [32m[1mLinking CXX static library /home/emprise/wholearm_ws/controller_ws/devel/.private/behaviortree_cpp/lib/liblexy_file.a[0m
+[  2%] Built target lexy_file
+[35m[1mScanning dependencies of target behaviortree_cpp[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/control_node.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/action_node.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/behavior_tree.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/tree_node.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/basic_types.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/loggers/bt_zmq_publisher.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/bt_factory.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/blackboard.cpp.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/repeat_node.cpp.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/inverter_node.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/xml_parsing.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/script_parser.cpp.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/retry_node.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/shared_library.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/condition_node.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorator_node.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/subtree_node.cpp.o[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/decorators/delay_node.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/if_then_else_node.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/fallback_node.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/parallel_node.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/reactive_sequence.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/reactive_fallback.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/sequence_node.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/switch_node.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/sequence_star_node.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/while_do_else_node.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/loggers/bt_cout_logger.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/loggers/bt_file_logger.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/loggers/bt_minitrace_logger.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/3rdparty/tinyxml2/tinyxml2.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/3rdparty/minitrace/minitrace.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/controls/manual_node.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/behaviortree_cpp.dir/src/shared_library_UNIX.cpp.o[0m
+[ 45%] [32m[1mLinking CXX shared library /home/emprise/wholearm_ws/controller_ws/devel/.private/behaviortree_cpp/lib/libbehaviortree_cpp.so[0m
+[ 45%] Built target behaviortree_cpp
+[35m[1mScanning dependencies of target crossdoor_nodes_dyn[0m
+[35m[1mScanning dependencies of target bt_sample_nodes[0m
+[35m[1mScanning dependencies of target bt3_plugin_manifest[0m
+[35m[1mScanning dependencies of target t01_first_tree_dynamic[0m
+[35m[1mScanning dependencies of target movebase_node_dyn[0m
+[35m[1mScanning dependencies of target dummy_nodes_dyn[0m
+[35m[1mScanning dependencies of target bt3_recorder[0m
+[35m[1mScanning dependencies of target bt3_log_cat[0m
+[ 45%] [32mBuilding CXX object tools/CMakeFiles/bt3_log_cat.dir/bt_log_cat.cpp.o[0m
+[ 46%] [32mBuilding CXX object tools/CMakeFiles/bt3_recorder.dir/bt_recorder.cpp.o[0m
+[ 48%] [32mBuilding CXX object sample_nodes/CMakeFiles/crossdoor_nodes_dyn.dir/crossdoor_nodes.cpp.o[0m
+[ 49%] [32mBuilding CXX object examples/CMakeFiles/t01_first_tree_dynamic.dir/t01_build_your_first_tree.cpp.o[0m
+[ 50%] [32mBuilding CXX object sample_nodes/CMakeFiles/dummy_nodes_dyn.dir/dummy_nodes.cpp.o[0m
+[ 52%] [32mBuilding CXX object sample_nodes/CMakeFiles/bt_sample_nodes.dir/movebase_node.cpp.o[0m
+[ 54%] [32mBuilding CXX object sample_nodes/CMakeFiles/bt_sample_nodes.dir/dummy_nodes.cpp.o[0m
+[ 54%] [32mBuilding CXX object sample_nodes/CMakeFiles/movebase_node_dyn.dir/movebase_node.cpp.o[0m
+[ 56%] [32mBuilding CXX object tools/CMakeFiles/bt3_plugin_manifest.dir/bt_plugin_manifest.cpp.o[0m
+[ 57%] [32mBuilding CXX object sample_nodes/CMakeFiles/bt_sample_nodes.dir/crossdoor_nodes.cpp.o[0m
+[ 58%] [32m[1mLinking CXX executable /home/emprise/wholearm_ws/controller_ws/devel/.private/behaviortree_cpp/lib/behaviortree_cpp/bt3_recorder[0m
+[ 58%] Built target bt3_recorder
+[ 60%] [32m[1mLinking CXX executable /home/emprise/wholearm_ws/controller_ws/devel/.private/behaviortree_cpp/lib/behaviortree_cpp/bt3_log_cat[0m
+[ 60%] Built target bt3_log_cat
+[ 61%] [32m[1mLinking CXX shared library bin/libcrossdoor_nodes_dyn.so[0m
+[ 62%] [32m[1mLinking CXX executable /home/emprise/wholearm_ws/controller_ws/devel/.private/behaviortree_cpp/lib/behaviortree_cpp/t01_first_tree_dynamic[0m
+[ 62%] Built target crossdoor_nodes_dyn
+[ 64%] [32m[1mLinking CXX executable /home/emprise/wholearm_ws/controller_ws/devel/.private/behaviortree_cpp/lib/behaviortree_cpp/bt3_plugin_manifest[0m
+[ 64%] Built target t01_first_tree_dynamic
+[ 64%] Built target bt3_plugin_manifest
+[ 65%] [32m[1mLinking CXX shared library bin/libmovebase_node_dyn.so[0m
+[ 65%] Built target movebase_node_dyn
+[ 66%] [32m[1mLinking CXX static library lib/libbt_sample_nodes.a[0m
+[ 66%] [32m[1mLinking CXX shared library bin/libdummy_nodes_dyn.so[0m
+[ 66%] Built target bt_sample_nodes
+[35m[1mScanning dependencies of target t04_reactive_sequence[0m
+[35m[1mScanning dependencies of target ex04_waypoints[0m
+[35m[1mScanning dependencies of target t06_subtree_port_remapping[0m
+[35m[1mScanning dependencies of target t05_crossdoor[0m
+[35m[1mScanning dependencies of target t01_first_tree_static[0m
+[35m[1mScanning dependencies of target ex02_runtime_ports[0m
+[35m[1mScanning dependencies of target t07_load_multiple_xml[0m
+[35m[1mScanning dependencies of target t08_additional_node_args[0m
+[35m[1mScanning dependencies of target ex01_wrap_legacy[0m
+[35m[1mScanning dependencies of target t09_scripting[0m
+[35m[1mScanning dependencies of target t03_generic_ports[0m
+[35m[1mScanning dependencies of target t02_basic_ports[0m
+[35m[1mScanning dependencies of target ex03_ncurses_manual_selector[0m
+[ 68%] [32mBuilding CXX object examples/CMakeFiles/t04_reactive_sequence.dir/t04_reactive_sequence.cpp.o[0m
+[ 69%] [32mBuilding CXX object examples/CMakeFiles/t07_load_multiple_xml.dir/t07_load_multiple_xml.cpp.o[0m
+[ 70%] [32mBuilding CXX object examples/CMakeFiles/t05_crossdoor.dir/t05_crossdoor.cpp.o[0m
+[ 72%] [32mBuilding CXX object examples/CMakeFiles/ex04_waypoints.dir/ex04_waypoints.cpp.o[0m
+[ 73%] [32mBuilding CXX object examples/CMakeFiles/t01_first_tree_static.dir/t01_build_your_first_tree.cpp.o[0m
+[ 74%] [32mBuilding CXX object examples/CMakeFiles/ex02_runtime_ports.dir/ex02_runtime_ports.cpp.o[0m
+[ 76%] [32mBuilding CXX object examples/CMakeFiles/t08_additional_node_args.dir/t08_additional_node_args.cpp.o[0m
+[ 77%] [32mBuilding CXX object examples/CMakeFiles/t03_generic_ports.dir/t03_generic_ports.cpp.o[0m
+[ 77%] [32mBuilding CXX object examples/CMakeFiles/t06_subtree_port_remapping.dir/t06_subtree_port_remapping.cpp.o[0m
+[ 78%] [32mBuilding CXX object examples/CMakeFiles/t09_scripting.dir/t09_scripting.cpp.o[0m
+[ 80%] [32mBuilding CXX object examples/CMakeFiles/t02_basic_ports.dir/t02_basic_ports.cpp.o[0m
+[ 81%] [32mBuilding CXX object examples/CMakeFiles/ex01_wrap_legacy.dir/ex01_wrap_legacy.cpp.o[0m
+[ 82%] [32mBuilding CXX object examples/CMakeFiles/ex03_ncurses_manual_selector.dir/ex03_ncurses_manual_selector.cpp.o[0m
+[ 82%] Built target dummy_nodes_dyn
+[ 84%] [32m[1mLinking CXX executable /home/emprise/wholearm_ws/controller_ws/devel/.private/behaviortree_cpp/lib/behaviortree_cpp/t05_crossdoor[0m
+[ 84%] Built target t05_crossdoor
+[ 85%] [32m[1mLinking CXX executable /home/emprise/wholearm_ws/controller_ws/devel/.private/behaviortree_cpp/lib/behaviortree_cpp/t08_additional_node_args[0m
+[ 85%] Built target t08_additional_node_args
+[ 86%] [32m[1mLinking CXX executable /home/emprise/wholearm_ws/controller_ws/devel/.private/behaviortree_cpp/lib/behaviortree_cpp/t06_subtree_port_remapping[0m
+[ 88%] [32m[1mLinking CXX executable /home/emprise/wholearm_ws/controller_ws/devel/.private/behaviortree_cpp/lib/behaviortree_cpp/ex01_wrap_legacy[0m
+[ 89%] [32m[1mLinking CXX executable /home/emprise/wholearm_ws/controller_ws/devel/.private/behaviortree_cpp/lib/behaviortree_cpp/t09_scripting[0m
+[ 90%] [32m[1mLinking CXX executable /home/emprise/wholearm_ws/controller_ws/devel/.private/behaviortree_cpp/lib/behaviortree_cpp/t03_generic_ports[0m
+[ 92%] [32m[1mLinking CXX executable /home/emprise/wholearm_ws/controller_ws/devel/.private/behaviortree_cpp/lib/behaviortree_cpp/ex03_ncurses_manual_selector[0m
+[ 93%] [32m[1mLinking CXX executable /home/emprise/wholearm_ws/controller_ws/devel/.private/behaviortree_cpp/lib/behaviortree_cpp/t04_reactive_sequence[0m
+[ 93%] Built target ex01_wrap_legacy
+[ 94%] [32m[1mLinking CXX executable /home/emprise/wholearm_ws/controller_ws/devel/.private/behaviortree_cpp/lib/behaviortree_cpp/t02_basic_ports[0m
+[ 94%] Built target t06_subtree_port_remapping
+[ 94%] Built target t09_scripting
+[ 94%] Built target t03_generic_ports
+[ 94%] Built target ex03_ncurses_manual_selector
+[ 96%] [32m[1mLinking CXX executable /home/emprise/wholearm_ws/controller_ws/devel/.private/behaviortree_cpp/lib/behaviortree_cpp/ex02_runtime_ports[0m
+[ 96%] Built target t04_reactive_sequence
+[ 96%] Built target t02_basic_ports
+[ 97%] [32m[1mLinking CXX executable /home/emprise/wholearm_ws/controller_ws/devel/.private/behaviortree_cpp/lib/behaviortree_cpp/t01_first_tree_static[0m
+[ 97%] Built target ex02_runtime_ports
+[ 98%] [32m[1mLinking CXX executable /home/emprise/wholearm_ws/controller_ws/devel/.private/behaviortree_cpp/lib/behaviortree_cpp/ex04_waypoints[0m
+[ 98%] Built target t01_first_tree_static
+[100%] [32m[1mLinking CXX executable /home/emprise/wholearm_ws/controller_ws/devel/.private/behaviortree_cpp/lib/behaviortree_cpp/t07_load_multiple_xml[0m
+[100%] Built target ex04_waypoints
+[100%] Built target t07_load_multiple_xml

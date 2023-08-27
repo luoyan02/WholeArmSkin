@@ -1,0 +1,1 @@
+/home/emprise/wholearm_ws/controller_ws/devel/.private/rosserial_msgs/share/rosserial_msgs/cmake/rosserial_msgs-msg-extras.cmake

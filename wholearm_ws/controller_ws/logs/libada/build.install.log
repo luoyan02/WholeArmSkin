@@ -1,0 +1,20 @@
+[ 21%] Built target libada
+[ 57%] Built target adapy
+[100%] Built target googletest
+[36mInstall the project...[0m
+-- Install configuration: ""
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/lib/libada.so
+-- Set runtime path of "/home/emprise/wholearm_ws/controller_ws/devel/lib/libada.so" to ""
+-- Up-to-date: /home/emprise/wholearm_ws/controller_ws/devel/include
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/include/libada
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/include/libada/AdaHand.hpp
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/include/libada/util.hpp
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/include/libada/Ada.hpp
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/include/libada/detail
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/include/libada/detail/Ada-impl.hpp
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/include/libada/detail/util-impl.hpp
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/libada/cmake/libadaConfig.cmake
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/libada/cmake/libadaConfig-noconfig.cmake
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/libada/package.xml
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/lib/python3/dist-packages/adapy.cpython-38-x86_64-linux-gnu.so
+-- Set runtime path of "/home/emprise/wholearm_ws/controller_ws/devel/lib/python3/dist-packages/adapy.cpython-38-x86_64-linux-gnu.so" to ""

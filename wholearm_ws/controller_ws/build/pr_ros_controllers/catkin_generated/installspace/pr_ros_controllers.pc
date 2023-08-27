@@ -1,0 +1,8 @@
+prefix=/home/emprise/wholearm_ws/controller_ws/install
+
+Name: pr_ros_controllers
+Description: Description of pr_ros_controllers
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lpr_ros_controllers
+Requires: controller_interface actionlib actionlib_msgs

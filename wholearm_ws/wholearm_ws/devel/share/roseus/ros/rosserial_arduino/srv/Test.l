@@ -1,0 +1,1 @@
+/home/emprise/wholearm_ws/wholearm_ws/devel/.private/rosserial_arduino/share/roseus/ros/rosserial_arduino/srv/Test.l

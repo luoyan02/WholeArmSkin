@@ -1,0 +1,5 @@
+[35m[1mScanning dependencies of target pr_hardware_interfaces[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/pr_hardware_interfaces.dir/src/PositionCommandInterface.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/pr_hardware_interfaces.dir/src/TriggerableInterface.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library /home/emprise/wholearm_ws/wholearm_ws/devel/.private/pr_hardware_interfaces/lib/libpr_hardware_interfaces.so[0m
+[100%] Built target pr_hardware_interfaces

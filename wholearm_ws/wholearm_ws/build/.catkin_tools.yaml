@@ -1,0 +1,6 @@
+devel_space: /home/emprise/wholearm_ws/wholearm_ws/devel
+install: false
+install_space: /home/emprise/wholearm_ws/wholearm_ws/install
+profile: default
+source_space: /home/emprise/wholearm_ws/wholearm_ws/src
+workspace: /home/emprise/wholearm_ws/wholearm_ws

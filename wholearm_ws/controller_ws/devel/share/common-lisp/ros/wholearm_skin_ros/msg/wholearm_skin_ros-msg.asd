@@ -1,0 +1,1 @@
+/home/emprise/wholearm_ws/controller_ws/devel/.private/wholearm_skin_ros/share/common-lisp/ros/wholearm_skin_ros/msg/wholearm_skin_ros-msg.asd

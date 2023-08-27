@@ -1,0 +1,8 @@
+prefix=/home/emprise/wholearm_ws/controller_ws/install
+
+Name: pr_control_msgs
+Description: Description of pr_control_msgs
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: actionlib_msgs sensor_msgs std_msgs trajectory_msgs

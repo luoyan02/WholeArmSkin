@@ -1,0 +1,8 @@
+prefix=/home/emprise/wholearm_ws/wholearm_ws/install
+
+Name: wholearm_skin_ros
+Description: Description of wholearm_skin_ros
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

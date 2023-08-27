@@ -1,0 +1,8 @@
+prefix=/home/emprise/wholearm_ws/controller_ws/install
+
+Name: kortex_description
+Description: Description of kortex_description
+Version: 2.2.2
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

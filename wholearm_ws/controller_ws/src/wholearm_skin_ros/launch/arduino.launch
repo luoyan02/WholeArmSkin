@@ -1,0 +1,4 @@
+<launch>
+<node ns="arduino0" name="arduino0" pkg="rosserial_python" type="serial_node.py" args="_port:=/dev/ttyACM1 _baud:=115200" output="screen" />
+<node ns="arduino1" name="arduino1" pkg="rosserial_python" type="serial_node.py" args="_port:=/dev/ttyACM0 _baud:=115200" output="screen" />
+</launch>

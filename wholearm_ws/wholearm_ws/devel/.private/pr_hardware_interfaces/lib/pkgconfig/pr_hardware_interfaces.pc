@@ -1,0 +1,8 @@
+prefix=/home/emprise/wholearm_ws/wholearm_ws/devel/.private/pr_hardware_interfaces
+
+Name: pr_hardware_interfaces
+Description: Description of pr_hardware_interfaces
+Version: 0.0.0
+Cflags: -I/home/emprise/wholearm_ws/wholearm_ws/src/pr_hardware_interfaces/include
+Libs: -L${prefix}/lib -lpr_hardware_interfaces
+Requires: hardware_interface

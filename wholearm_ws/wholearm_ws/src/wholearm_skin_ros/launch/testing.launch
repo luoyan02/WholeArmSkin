@@ -1,0 +1,4 @@
+<launch>
+    <node name="pub" pkg="wholearm_skin_ros" type="viz_pub_testing.py" output="screen" />
+    <node name="sub" pkg="wholearm_skin_ros" type="viz_sub_testing.py" output="screen" />
+</launch>

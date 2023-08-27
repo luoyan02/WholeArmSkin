@@ -1,0 +1,42 @@
+{
+  "water_bottle": {
+    "resource": "package://pr_assets/data/objects/water_bottle.urdf",
+    "name": "water_bottle",
+    "offset": [
+      [1.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0],
+      [0.0, 0.0, 1.0, 0.0],
+      [0.0, 0.0, 0.0, 1.0]
+    ]
+  },
+  "can": {
+    "resource": "package://pr_assets/data/objects/can.urdf",
+    "name": "can",
+    "offset": [
+      [1.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0],
+      [0.0, 0.0, 1.0, 0.0],
+      [0.0, 0.0, 0.0, 1.0]
+    ]
+  },
+  "food_item": {
+    "resource": "package://pr_assets/data/objects/food_item.urdf",
+    "name": "food_item",
+    "offset": [
+      [1.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0],
+      [0.0, 0.0, 1.0, 0.0],
+      [0.0, 0.0, 0.0, 1.0]
+    ]
+  },
+  "mouth": {
+    "resource": "package://pr_assets/data/objects/tom.urdf",
+    "name": "mouth",
+    "offset": [
+      [1.0, 0.0, 0.0, 0.0],
+      [0.0, 1.0, 0.0, 0.0],
+      [0.0, 0.0, 1.0, 0.0],
+      [0.0, 0.0, 0.0, 1.0]
+    ]
+  }
+}

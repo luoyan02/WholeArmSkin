@@ -1,0 +1,52 @@
+<launch>
+
+  <arg name="use_forque" default="false" doc="Add forque to URDF and spawned controllers."/>
+  <arg name="use_apriltag_calib" default="false" doc="Whether to compute the camera tranform in real-time using AprilTags (as opposed to using a static transform)."/>
+  <arg name="perception" default="false" doc="Boolean flag of whether to set up the perception on ADA" />
+  <!-- Other options: retinanet, spnet, spanet -->
+  <!-- See possible networks in https://github.com/personalrobotics/food_detector/ -->
+  <arg name="detector" default="false" doc="Which network to use for food perception. Set to 'false' for simulation."/>
+  <arg name="version" default="2" doc="Kinova Arm Version (JACO = 2, Kortex = 3)" />
+  <arg name="dof" default="6" doc="Number of degrees of freedom in arm" />
+
+  <!-- Gen3 specific arguments required by Kortex API for instantiating a private communication session -->
+  <arg name="ip_address" default="emprise-kortex.coecis.cornell.edu" doc="IP address for TCP/UDP comms"/>
+  <arg name="username" default="admin" doc="Username for kortex session"/>
+  <arg name="password" default="admin" doc="Password for kortex session"/>
+  <arg name="api_session_inactivity_timeout_ms" default="35000"/> <!--milliseconds-->
+  <arg name="api_connection_inactivity_timeout_ms" default="20000"/> <!--milliseconds-->
+  <arg name="use_admittance" default="false" doc="Set to true when using Kinova-provided admittance mode"/>
+
+  <!-- load controller configuration -->
+  <rosparam file="$(find libada)/config/gen$(arg version)_$(arg dof)dof.yaml" command="load" />
+
+  <!-- start joint state and mode controllers -->
+  <node name="controller_spawner_started" pkg="controller_manager" type="spawner" respawn="false"
+      output="screen"
+      args="
+        joint_state_controller
+        joint_mode_controller
+      " />
+
+  <!-- Gen3 Controllers -->
+
+
+  <!-- TODO: Initialize controllers directly via Aikido -->
+
+
+  <!-- Load Base URDF Files -->
+  <group unless="$(arg use_forque)">
+    <!-- load ada urdf -->
+    <param name="robot_description"
+          command="cat $(find ada_description)/robots_urdf/ada.urdf" if="$(eval arg('version') == 2)"/>
+    <param name="robot_description"
+          command="$(find xacro)/xacro --inorder $(find kortex_description)/robots/gen3_robotiq_2f_85.xacro gripper:= sim:=false dof:=$(arg dof)" if="$(eval arg('version') == 3)"/>
+  </group>
+
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="rob_st_pub" />
+
+  <node name="st_map2world" pkg="tf" type="static_transform_publisher" respawn="false" output="screen"
+    args="0 0 0 0 0 0 1 map world 10"/>
+
+</launch>
+

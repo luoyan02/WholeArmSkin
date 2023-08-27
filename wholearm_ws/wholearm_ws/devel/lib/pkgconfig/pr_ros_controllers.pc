@@ -1,0 +1,1 @@
+/home/emprise/wholearm_ws/wholearm_ws/devel/.private/pr_ros_controllers/lib/pkgconfig/pr_ros_controllers.pc

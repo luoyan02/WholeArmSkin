@@ -1,0 +1,1 @@
+/home/emprise/wholearm_ws/controller_ws/devel/.private/rewd_controllers/lib/pkgconfig/rewd_controllers.pc

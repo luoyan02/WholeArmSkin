@@ -1,0 +1,8 @@
+prefix=/home/emprise/wholearm_ws/controller_ws/devel/.private/pr_assets
+
+Name: pr_assets
+Description: Description of pr_assets
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

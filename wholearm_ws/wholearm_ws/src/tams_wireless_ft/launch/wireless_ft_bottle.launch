@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Record human forces during bottle opening (cap screwing).
+       
+       - ATi wireless FT system with (currently three sensors)
+       - (optionally) PlotJuggler
+       - (optionally) rviz with three F/T displays
+       - (optionally) phasespace for bottle pose trajectories
+       - (optionally) rosbag 
+  -->
+
+  <arg name="launch_rviz" default="true" />
+  <arg name="launch_plotjuggler" default="true" />
+  <arg name="launch_rosbag" default="false" />
+
+
+  <!-- ATI wireless FT configured for channel 2 (green), 4 (yellow), 5 (black),
+       channels 1 and 3 unused at the moment -->
+  <node name="wireless_ft" pkg="tams_wireless_ft" type="tams_wireless_ft" output="screen" >
+    <param name="hostname" value="192.168.104.107" />
+    <param name="telnet_port" value="23" />
+    <param name="udp_port" value="49152" />
+
+    <param name="rate" value="125" />
+    <param name="oversample" value="32" />
+    <param name="active_channels" value="245" type="string" /> <!-- just "3" for now, any from "123456" -->
+
+    <param name="reference_frame" value="world" />
+    <param name="tf_prefix" value="wireless_ft_" />
+  </node>
+
+
+  <!-- (fake) transform publishers, so that rviz can  visualize wrenches -->
+  <node pkg="tf" type="static_transform_publisher" name="wireless_ft_transducer1_broadcaster" 
+        args="1.0 0.0 0.5   0 0 0 world transducer1 10" />
+
+  <node pkg="tf" type="static_transform_publisher" name="wireless_ft_transducer2_broadcaster" 
+        args="2.0 0.0 0.5   0 0 0 world transducer2 10" />
+
+  <node pkg="tf" type="static_transform_publisher" name="wireless_ft_transducer3_broadcaster" 
+        args="3.0 0.0 0.5   0 0 0 world transducer3 10" />
+
+  <node pkg="tf" type="static_transform_publisher" name="wireless_ft_transducer4_broadcaster" 
+        args="4.0 0.0 0.5   0 0 0 world transducer4 10" />
+
+  <node pkg="tf" type="static_transform_publisher" name="wireless_ft_transducer5_broadcaster" 
+        args="5.0 0.0 0.5   0 0 0 world transducer5 10" />
+
+
+  <group if="$(arg launch_rosbag)">
+    <node pkg="rosbag" type="record" name="sunrise_ft_rosbag_recorder"
+        args="printed_ft/rawdata wireless_ft/wrench_2 wireless_ft/wrench_4 wireless_ft/wrench_5 tf tf_static">
+    </node>
+  </group>
+
+
+  <group if="$(arg launch_plotjuggler)">
+    <node pkg="plotjuggler" type="PlotJuggler" name="plotjuggler"
+          args="wireless_ft/wrench_2 wireless_ft/wrench_4 wireless_ft/wrench_5">
+    </node>
+  </group>
+
+
+  <!-- rviz -->
+  <!--      args="-d $(find tams_printed_ft)/config/demo.rviz"> -->
+  <group if="$(arg launch_rviz)">
+    <node pkg="rviz" type="rviz" name="rviz" 
+      args="-d $(find tams_wireless_ft)/config/bottle_opening.rviz" >
+    </node>
+  </group>
+
+</launch>

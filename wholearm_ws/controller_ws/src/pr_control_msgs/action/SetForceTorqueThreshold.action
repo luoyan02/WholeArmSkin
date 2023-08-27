@@ -1,0 +1,8 @@
+float64 force_threshold
+float64 torque_threshold
+bool retare
+---
+bool success
+string message
+---
+# no feedback

@@ -1,0 +1,84 @@
+[ 53%] Built target feeding
+[ 53%] Built target sensor_msgs_generate_messages_py
+[ 53%] Built target std_msgs_generate_messages_py
+[ 53%] Built target _yui_bathing_generate_messages_check_deps_PatchProcessor
+[ 53%] Built target _yui_bathing_generate_messages_check_deps_Perception
+[ 65%] Built target yui_bathing_generate_messages_py
+[ 65%] Built target std_msgs_generate_messages_eus
+[ 65%] Built target sensor_msgs_generate_messages_eus
+[ 76%] Built target yui_bathing_generate_messages_eus
+[ 76%] Built target sensor_msgs_generate_messages_cpp
+[ 76%] Built target std_msgs_generate_messages_cpp
+[ 84%] Built target yui_bathing_generate_messages_cpp
+[ 84%] Built target std_msgs_generate_messages_lisp
+[ 84%] Built target sensor_msgs_generate_messages_lisp
+[ 92%] Built target yui_bathing_generate_messages_lisp
+[ 92%] Built target std_msgs_generate_messages_nodejs
+[ 92%] Built target sensor_msgs_generate_messages_nodejs
+[100%] Built target yui_bathing_generate_messages_nodejs
+[100%] Built target yui_bathing_generate_messages
+[36mInstall the project...[0m
+-- Install configuration: ""
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/_setup_util.py
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/env.sh
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/setup.bash
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/local_setup.bash
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/setup.sh
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/local_setup.sh
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/setup.zsh
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/local_setup.zsh
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/.rosinstall
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/yui_bathing/srv/PatchProcessor.srv
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/yui_bathing/srv/Perception.srv
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/yui_bathing/cmake/yui_bathing-msg-paths.cmake
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/include/yui_bathing
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/include/yui_bathing/Perception.h
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/include/yui_bathing/PerceptionRequest.h
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/include/yui_bathing/PatchProcessorResponse.h
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/include/yui_bathing/PatchProcessorRequest.h
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/include/yui_bathing/PatchProcessor.h
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/include/yui_bathing/PerceptionResponse.h
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/roseus/ros/yui_bathing
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/roseus/ros/yui_bathing/manifest.l
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/roseus/ros/yui_bathing/srv
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/roseus/ros/yui_bathing/srv/Perception.l
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/roseus/ros/yui_bathing/srv/PatchProcessor.l
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/common-lisp/ros/yui_bathing
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/common-lisp/ros/yui_bathing/srv
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/common-lisp/ros/yui_bathing/srv/Perception.lisp
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/common-lisp/ros/yui_bathing/srv/_package_Perception.lisp
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/common-lisp/ros/yui_bathing/srv/_package.lisp
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/common-lisp/ros/yui_bathing/srv/_package_PatchProcessor.lisp
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/common-lisp/ros/yui_bathing/srv/PatchProcessor.lisp
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/common-lisp/ros/yui_bathing/srv/yui_bathing-srv.asd
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/gennodejs/ros/yui_bathing
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/gennodejs/ros/yui_bathing/_index.js
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/gennodejs/ros/yui_bathing/srv
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/gennodejs/ros/yui_bathing/srv/Perception.js
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/gennodejs/ros/yui_bathing/srv/_index.js
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/gennodejs/ros/yui_bathing/srv/PatchProcessor.js
+Listing '/home/emprise/wholearm_ws/controller_ws/build/yui_bathing/devel/lib/python3/dist-packages/yui_bathing'...
+Compiling '/home/emprise/wholearm_ws/controller_ws/build/yui_bathing/devel/lib/python3/dist-packages/yui_bathing/__init__.py'...
+Listing '/home/emprise/wholearm_ws/controller_ws/build/yui_bathing/devel/lib/python3/dist-packages/yui_bathing/srv'...
+Compiling '/home/emprise/wholearm_ws/controller_ws/build/yui_bathing/devel/lib/python3/dist-packages/yui_bathing/srv/_PatchProcessor.py'...
+Compiling '/home/emprise/wholearm_ws/controller_ws/build/yui_bathing/devel/lib/python3/dist-packages/yui_bathing/srv/_Perception.py'...
+Compiling '/home/emprise/wholearm_ws/controller_ws/build/yui_bathing/devel/lib/python3/dist-packages/yui_bathing/srv/__init__.py'...
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/lib/python3/dist-packages/yui_bathing
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/lib/python3/dist-packages/yui_bathing/__init__.py
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/lib/python3/dist-packages/yui_bathing/__pycache__
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/lib/python3/dist-packages/yui_bathing/__pycache__/__init__.cpython-38.pyc
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/lib/python3/dist-packages/yui_bathing/srv
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/lib/python3/dist-packages/yui_bathing/srv/__init__.py
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/lib/python3/dist-packages/yui_bathing/srv/__pycache__
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/lib/python3/dist-packages/yui_bathing/srv/__pycache__/__init__.cpython-38.pyc
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/lib/python3/dist-packages/yui_bathing/srv/__pycache__/_Perception.cpython-38.pyc
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/lib/python3/dist-packages/yui_bathing/srv/__pycache__/_PatchProcessor.cpython-38.pyc
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/lib/python3/dist-packages/yui_bathing/srv/_Perception.py
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/lib/python3/dist-packages/yui_bathing/srv/_PatchProcessor.py
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/lib/pkgconfig/yui_bathing.pc
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/yui_bathing/cmake/yui_bathing-msg-extras.cmake
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/yui_bathing/cmake/yui_bathingConfig.cmake
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/yui_bathing/cmake/yui_bathingConfig-version.cmake
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/yui_bathing/package.xml
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/lib/yui_bathing/feeding
+-- Set runtime path of "/home/emprise/wholearm_ws/controller_ws/devel/lib/yui_bathing/feeding" to ""

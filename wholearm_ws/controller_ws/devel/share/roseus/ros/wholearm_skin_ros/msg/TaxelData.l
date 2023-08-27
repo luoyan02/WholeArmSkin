@@ -1,0 +1,1 @@
+/home/emprise/wholearm_ws/controller_ws/devel/.private/wholearm_skin_ros/share/roseus/ros/wholearm_skin_ros/msg/TaxelData.l

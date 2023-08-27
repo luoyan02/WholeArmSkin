@@ -1,0 +1,6 @@
+#include "aikido/perception/AssetDatabase.hpp"
+#include "aikido/perception/DetectedObject.hpp"
+#include "aikido/perception/PerceptionModule.hpp"
+#include "aikido/perception/PoseEstimatorModule.hpp"
+#include "aikido/perception/VoxelGridModule.hpp"
+#include "aikido/perception/shape_conversions.hpp"

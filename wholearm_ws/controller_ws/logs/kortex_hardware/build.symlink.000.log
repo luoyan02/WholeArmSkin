@@ -1,0 +1,4 @@
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/lib/kortex_hardware/kortex_hardware
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/lib/pkgconfig/kortex_hardware.pc
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/share/kortex_hardware/cmake/kortex_hardwareConfig-version.cmake
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/share/kortex_hardware/cmake/kortex_hardwareConfig.cmake

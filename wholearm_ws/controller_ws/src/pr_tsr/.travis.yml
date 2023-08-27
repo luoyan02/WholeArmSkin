@@ -1,0 +1,48 @@
+dist: bionic
+
+sudo: required
+
+group: travis_lts
+
+language: generic
+
+env:
+  global:
+    - TIMEOUT=30
+
+cache:
+  - apt
+
+matrix:
+  include:
+    - os: linux
+      compiler: gcc
+      env: BUILD_TYPE=Debug CATKIN_CONFIG_OPTIONS="-DCMAKE_BUILD_TYPE=Debug -DPR_TSR_TREAT_WARNINGS_AS_ERRORS=ON"
+    - os: linux
+      compiler: gcc
+      env: BUILD_TYPE=Release CATKIN_CONFIG_OPTIONS="-DCMAKE_BUILD_TYPE=Release -DPR_TSR_TREAT_WARNINGS_AS_ERRORS=ON"
+
+# Install test fixture dependencies.
+before_install:
+  - mkdir -p "${HOME}/workspace/src"
+  - cd "${HOME}/workspace"
+  - git clone https://github.com/personalrobotics/pr-cleanroom.git scripts
+  - curl -sS "${DISTRIBUTION}" > distribution.yml
+  - ./scripts/internal-setup.sh
+  - export PACKAGE_NAMES="$(./scripts/internal-get-packages.py distribution.yml ${REPOSITORY})"
+  - sudo apt-get install -y clang-format-6.0
+
+install:
+  - mv "${TRAVIS_BUILD_DIR}" src
+  - ./scripts/internal-distro.py --workspace=src distribution.yml --repository "${REPOSITORY}"
+
+script:
+  - ./scripts/internal-build.sh ${PACKAGE_NAMES}
+  - ./scripts/internal-test.sh ${PACKAGE_NAMES}
+  # Check code style
+  - ./scripts/internal-run.sh catkin build --no-status --no-deps -p 1 -i --make-args check-format -- pr_tsr
+
+after_failure:
+  - cat ./build/pr_tsr/Testing/Temporary/LastTest.log
+  - cat ./build/pr_tsr/Testing/Temporary/LastTestsFailed.log
+

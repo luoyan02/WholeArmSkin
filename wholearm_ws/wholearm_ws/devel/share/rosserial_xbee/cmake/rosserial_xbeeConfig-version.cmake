@@ -1,0 +1,1 @@
+/home/emprise/wholearm_ws/wholearm_ws/devel/.private/rosserial_xbee/share/rosserial_xbee/cmake/rosserial_xbeeConfig-version.cmake

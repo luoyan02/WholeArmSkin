@@ -1,0 +1,9 @@
+\subsubsection usage Usage
+\verbatim
+<node name="wholearm_skin_ros" pkg="wholearm_skin_ros" type="wholearm_skin_ros">
+  <param name="order" type="int" value="5" />
+  <param name="wn" type="double" value="1.5" />
+  <param name="fs" type="double" value="60.0" />
+</node>
+\endverbatim
+

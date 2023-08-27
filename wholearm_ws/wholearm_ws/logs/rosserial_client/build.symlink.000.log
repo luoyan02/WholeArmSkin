@@ -1,0 +1,7 @@
+Symlinking /home/emprise/wholearm_ws/wholearm_ws/devel/lib/pkgconfig/rosserial_client.pc
+Symlinking /home/emprise/wholearm_ws/wholearm_ws/devel/lib/python3/dist-packages/rosserial_client/__init__.py
+Symlinking /home/emprise/wholearm_ws/wholearm_ws/devel/lib/rosserial_client/make_library.py
+Symlinking /home/emprise/wholearm_ws/wholearm_ws/devel/lib/rosserial_client/cmake.lock
+Symlinking /home/emprise/wholearm_ws/wholearm_ws/devel/lib/rosserial_client/make_libraries
+Symlinking /home/emprise/wholearm_ws/wholearm_ws/devel/share/rosserial_client/cmake/rosserial_clientConfig.cmake
+Symlinking /home/emprise/wholearm_ws/wholearm_ws/devel/share/rosserial_client/cmake/rosserial_clientConfig-version.cmake

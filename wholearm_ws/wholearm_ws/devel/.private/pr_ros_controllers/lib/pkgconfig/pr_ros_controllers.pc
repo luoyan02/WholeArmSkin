@@ -1,0 +1,8 @@
+prefix=/home/emprise/wholearm_ws/wholearm_ws/devel/.private/pr_ros_controllers
+
+Name: pr_ros_controllers
+Description: Description of pr_ros_controllers
+Version: 0.0.0
+Cflags: -I/home/emprise/wholearm_ws/wholearm_ws/src/pr_ros_controllers/pr_ros_controllers/include
+Libs: -L${prefix}/lib -lpr_ros_controllers
+Requires: controller_interface actionlib actionlib_msgs

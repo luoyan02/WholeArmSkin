@@ -1,0 +1,1 @@
+/home/emprise/wholearm_ws/wholearm_ws/devel/.private/rosserial_vex_cortex/lib/pkgconfig/rosserial_vex_cortex.pc

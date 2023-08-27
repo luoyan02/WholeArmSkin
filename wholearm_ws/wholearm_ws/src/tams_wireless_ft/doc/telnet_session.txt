@@ -1,0 +1,321 @@
+# Example telnet session with the Wireless F/T
+#
+tams113> telnet 192.168.104.107
+Trying 192.168.104.107...
+Connected to 192.168.104.107.
+Escape character is '^]'.
+WLAN:  2017 Mar 16 11:18:17 Telnet connection opened by client
+>Telnet: DO   SUPPRESS-GO-AHEAD
+>Telnet: WILL TERMINAL-TYPE
+>Telnet: WILL NAWS (Negotiate About Window Size)
+>Telnet: WILL TERMINAL_SPEED
+>Telnet: WILL 0x21
+>Telnet: WILL 0x22
+>Telnet: WILL NEW-ENVIRON
+>Telnet: DO   0x05
+>Telnet: WILL 0x23
+>band
+band
+Band = 2.4 GHz
+>ssid
+ssid
+SSID = 'INFFUL'
+>help
+help component versions
+================================================================================
+>power
+power
+POWER On
+>bright 100
+bright 100
+LED brightness: Analog Board = 100% Power Button = 25%
+>bright 10
+bright 10
+LED brightness: Analog Board = 10% Power Button = 25%
+>bright 25
+bright 25
+LED brightness: Analog Board = 25% Power Button = 25%
+>versions
+versions
+Component   Version
+---------   -------
+Firmware    2.1.27 - Feb 18 2016 12:00:59
+WLAN Module 2.6.2.1.7.7
+CPLD 0      04
+CPLD 1      04
+>xpwr
+xpwr
+Tr Auto   Now
+-- ----   ---
+ 1 ON     ON
+ 2 ON     ON
+ 3 ON     ON
+ 4 ON     ON
+ 5 ON     ON
+ 6 OFF    OFF
+Analog power = ON in AUTO mode
+
+
+>gateip
+gateip
+Gateway IP = 192.168.0.1
+
+>devip
+devip
+Device IP = 192.168.0.3
+
+
+> destip
+destip
+Destination IP = 0.0.0.0
+
+
+>ip
+ip
+Parameter       Active          Default         MAC
+---------       ------          -------         ---
+SSID            INFFUL          INFFUL
+DESTIP          134.100.13.113  0.0.0.0
+GATEIP          192.168.104.254 192.168.0.1     c8-f9-f9-29-cd-84
+DEVIP           192.168.104.107 192.168.0.3     00-23-a7-0c-3d-5e
+NET MASK        255.255.255.0   255.255.255.0
+DNS Server 1    134.100.9.61
+DNS Server 2    134.100.33.240
+ANTENNA         External
+BAND            2.4 GHz
+NET CHANNEL     1
+NET DHCP        On
+NET LOC         Put your location here
+NET MODE        Normal CLIENT Mode
+NET UDPACT      DROP
+TXPWR           2
+LOCALE          EURO
+WLAN Connected  Yes
+Channel number  1
+Network type    Infra
+Security level  WPA2 
+DHCP Mode       DHCP
+Open sockets    4
+Sock State  Type  DevPort RemPort  RemIP
+---- -----  ----  ------- -------  -----
+  1  Open   UDPout  49152   53870  134.100.13.113
+  2  Open   UDPin   49152       0  0.0.0.0
+  3  Open   TCPin      23   54061  134.100.13.113
+  4  Open   UDPin   51000       0  0.0.0.0
+
+
+>net
+net
+NET     AP         => Get Access Points found in last scan
+NET     CHANNEL    [1 -> 13 | 149 | 153 | 157 | 161 | 165] => Set channel if AP/GO
+NET     DATE       [yyyy/mm/dd]      => Set date
+NET     DEBUG      [ON | OFF]        => Enable msgs for incoming Discoveries & TCP connections
+NET     DEVPORTUDP [0 -> 65535]      => Set device port for UDP listening and packet transmission
+NET     DHCP       [ON | OFF]        => Set DHCP
+NET     DNS        [up to 90 chars]  => Get IP addr of given URL
+NET     KEY        [up to 64 chars]  => Set encryption key, " may be used
+NET     LOC        [up to 40 chars]  => Set location,       " may be used
+NET     MASK       [n.n.n.n]         => Set Subnet Mask
+NET     MODE       [CLIENT | DIRECT] => Set Client or Direct operating mode
+NET     PING       [ip | url]        => Do ping
+NET     TIME       [hh:mm:ss]        => Set time
+NET     UDPACT     [BUFFER | DROP]   => Set packet action during flow control
+
+
+>net ap
+net ap
+
+##  Ch Secur RSSI  SNR NType        MAC        SSID
+--  -- ----- ----  --- -----        ---        ----
+ 1   1 Open   -62  -24 Infra ec-bd-1d-81-db-13 UHH
+ 2   1 WPA2E  -62  -24 Infra ec-bd-1d-81-db-15 UHH-SC
+ 3   1 WPA2   -65  -21 Infra c8-f9-f9-29-cd-81 GUEST
+ 4   1 WPA2   -65  -15 Infra 54-e6-fc-db-95-b4 BitBots
+ 5   1 WPA2   -66  -14 Infra ec-bd-1d-81-db-14 INFFUL
+ 6   1 WPA2   -67  -17 Infra ec-bd-1d-81-db-11 GUEST
+ 7   1 Open   -67  -13 Infra c8-f9-f9-29-cd-83 UHH
+ 8   1 WPA2E  -68  -12 Infra ec-bd-1d-81-db-10 eduroam
+ 9   1 WPA2E  -68  -12 Infra c8-f9-f9-29-cd-85 UHH-SC
+10   1 WPA2E  -68  -16 Infra c8-f9-f9-29-cd-80 eduroam
+11   1 WPA2   -69  -15 Infra c8-f9-f9-29-cd-84 INFFUL
+
+
+>net date
+net date
+2017 Mar 16 11:27:14 
+# note: if NTP is working...
+
+
+>net key
+net key
+NET KEY = 'InFfUl2012'
+
+
+>net mode
+net mode
+NET MODE Normal CLIENT Mode
+
+
+>net udpact
+net udpact
+NET UDPACT DROP
+
+
+>rssi
+rssi
+RSSI from INFFUL using External antenna: -56 dBm
+
+
+>wlan
+wlan
+WLAN: Power ON
+
+
+>bias
+bias
+Tr Ch Pwr   Bias
+-- -- ---   ----
+
+
+>filter
+filter
+Tr Filter  Taps
+-- ------  ----
+ 1 MEAN      8
+ 2 MEAN      8
+ 3 MEAN      8
+ 4 MEAN      8
+ 5 MEAN      8
+ 6 MEAN     16
+
+
+
+>rate
+rate
+Packet rate =  125 Hz
+ADC    rate = 4000 Hz
+Oversample  =   32
+
+
+>rate 125 16
+rate 125 16
+Packet rate =  125 Hz
+ADC    rate = 2000 Hz
+Oversample  =   16
+
+
+>ntp
+ntp
+Parameter Value
+--------- -----
+Enable    1
+Server    131.188.3.220
+TimeZone  0:00
+DST       ON
+
+
+ntp enable 0 / ntp enable 1
+
+ntp server pool.ntp.org
+
+ntp
+
+
+
+
+>ports
+ports
+Bit V Purpose    GPIOPCTL Dir Strength Pin-Type                   GPIO-Interrupt
+--- - -------    -------- --- -------- --------                   --------------
+PA0 1 UART0_RX   U0Rx         2 mA     Push-pull, weak pull-up    
+PA1 1 UART0_TX   U0Tx         2 mA     Push-pull                  
+PA2 0 SPI0_CLK   SSI0Clk      8 mA     Push-pull                  
+PA3 1 SD_CS      SSI0Fss  Out 2 mA     Push-pull                  
+PA4 1 SPI0_MISO  SSI0Rx       2 mA     Push-pull, weak pull-up    
+PA5 1 SPI0_MOSI  SSI0Tx       8 mA     Push-pull                  
+PA6 0 WLAN_RDY   GPIO     In  2 mA     Push-pull, weak pull-up    
+PA7 0 PWM_Sync   GPIO     In  2 mA     Push-pull                  
+
+PB0 0 JTAG_ENA   GPIO     Out 2 mA     Push-pull                  
+PB1 1 LED_SYS    GPIO     Out 2 mA     Push-pull                  
+PB2 1 I2C0_CLK   I2C0SCL      2 mA     Open-drain, weak pull-up   
+PB3 1 I2C0_SDA   I2C0SDA      2 mA     Open-drain, weak pull-up   
+PB4 1 MODE_SEL0  GPIO     Out 2 mA     Push-pull                  
+PB5 0 Spare      GPIO     In  2 mA     Analog comparator          
+PB6 0 BUTTON     GPIO     In  2 mA     Push-pull, weak pull-down  
+PB7 0 Spare      GPIO     In  2 mA     Analog comparator          
+
+PC0 1 JTAG       TCK          2 mA     Push-pull, weak pull-up    
+PC1 1 JTAG       TMS          2 mA     Push-pull, weak pull-up    
+PC2 1 JTAG       TDI          2 mA     Push-pull, weak pull-up    
+PC3 1 JTAG       TDO          2 mA     Push-pull, weak pull-up    
+PC4 0 DIP1       GPIO     In  2 mA     Push-pull, weak pull-down  
+PC5 0 DIP2       GPIO     In  2 mA     Push-pull, weak pull-down  
+PC6 1 UART1_RX   U1Rx         2 mA     Push-pull, weak pull-up    
+PC7 1 UART1_TX   U1Tx         2 mA     Push-pull                  
+
+PD0 0 CS0        GPIO     Out 2 mA     Push-pull                  
+PD1 1 CS1        GPIO     Out 2 mA     Push-pull                  
+PD2 1 CS2        GPIO     Out 2 mA     Push-pull                  
+PD3 1 CS3        GPIO     Out 2 mA     Push-pull                  
+PD4 1 CS4        GPIO     Out 2 mA     Push-pull                  
+PD5 1 CS5        GPIO     Out 2 mA     Push-pull                  
+PD6 1 BOARDSEL   GPIO     Out 2 mA     Push-pull                  
+PD7 0 CPLD_CS    GPIO     Out 2 mA     Push-pull                  
+
+PE0 1 SD_PRES    GPIO     In  2 mA     Push-pull, weak pull-up    
+PE1 1 WLAN_CS    GPIO     Out 2 mA     Push-pull                  
+PE2 0 ANA_IN0    GPIO     In  2 mA     Analog comparator          
+PE3 0 ANA_IN1    GPIO     In  2 mA     Analog comparator          
+PE4 1 USB_ENUM   GPIO     In  2 mA     Push-pull                  
+PE5 1 SD_POWER   GPIO     Out 2 mA     Push-pull, weak pull-up    
+PE6 1 FLASH_EN   GPIO     Out 2 mA     Push-pull                  
+PE7 0 Spare      GPIO     In  2 mA     Analog comparator          
+
+PF0 1 +VA_ON/OFF GPIO     Out 2 mA     Push-pull                  
+PF1 0 MCU_SHDN   GPIO     In  2 mA     Analog comparator          
+PF2 0 LED_GRN    GPIO     Out 2 mA     Push-pull                  
+PF3 0 LED_RED    GPIO     Out 2 mA     Push-pull                  
+PF4 0 SPI1_MISO  SSI1Rx       2 mA     Push-pull                  
+PF5 0 SPI1_MOSI  SSI1Tx       2 mA     Push-pull                  
+PF6 0 No-Pin     GPIO     In  2 mA     Analog comparator          
+PF7 0 No-Pin     GPIO     In  2 mA     Analog comparator          
+
+PG0 0 UART2_RX   GPIO     In  2 mA     Analog comparator          
+PG1 0 UART2_TX   GPIO     In  2 mA     Analog comparator          
+PG2 0 No-Pin     GPIO     In  2 mA     Analog comparator          
+PG3 0 No-Pin     GPIO     In  2 mA     Analog comparator          
+PG4 0 No-Pin     GPIO     In  2 mA     Analog comparator          
+PG5 0 No-Pin     GPIO     In  2 mA     Analog comparator          
+PG6 0 No-Pin     GPIO     In  2 mA     Analog comparator          
+PG7 0 Spare      GPIO     In  2 mA     Analog comparator          
+
+PH0 1 WLAN_RES   GPIO     Out 2 mA     Push-pull                  
+PH1 0 WLAN_INT   GPIO     In  2 mA     Push-pull                  Rising-edge
+PH2 0 WLAN_RDY   GPIO     In  2 mA     Push-pull                  
+PH3 1 FLASH_CS   GPIO     Out 2 mA     Push-pull                  
+PH4 0 SPI1_CLK   SSI1Clk      2 mA     Push-pull                  
+PH5 1 PWRGOOD    GPIO     In  2 mA     Push-pull, weak pull-down  
+PH6 1 PWRIRQ     GPIO     In  2 mA     Push-pull, weak pull-up    
+PH7 1 WLAN_PWR   GPIO     Out 2 mA     Push-pull                  
+
+PJ0 0 Spare      GPIO     In  2 mA     Analog comparator          
+PJ1 1 USER_SW3   GPIO     In  2 mA     Push-pull, weak pull-up    
+PJ2 0 WLAN_WAKE  GPIO     In  2 mA     Analog comparator          
+PJ3 1 SD_SSIEN   GPIO     Out 2 mA     Push-pull                  
+PJ4 0 Spare      GPIO     In  2 mA     Analog comparator          
+PJ5 0 Spare      GPIO     In  2 mA     Analog comparator          
+PJ6 0 -VA_ON/OFF GPIO     Out 2 mA     Push-pull                  
+PJ7 0 LED_PWM    CCP0         2 mA     Push-pull                  
+
+
+
+SD Card commands - without card inserted:
+
+>scd hugo
+scd hugo
+SDFS:  2017 Mar 16 11:31:26 NOT_ENABLED ../SDFunctions.c 498
+SDFS:  2017 Mar 16 11:31:26 NOT_ENABLED ../SDFunctions.c 503
+
+
+

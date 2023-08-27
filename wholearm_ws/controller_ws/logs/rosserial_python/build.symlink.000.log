@@ -1,0 +1,7 @@
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/lib/pkgconfig/rosserial_python.pc
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/lib/python3/dist-packages/rosserial_python/__init__.py
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/lib/rosserial_python/cmake.lock
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/lib/rosserial_python/message_info_service.py
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/lib/rosserial_python/serial_node.py
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/share/rosserial_python/cmake/rosserial_pythonConfig.cmake
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/share/rosserial_python/cmake/rosserial_pythonConfig-version.cmake

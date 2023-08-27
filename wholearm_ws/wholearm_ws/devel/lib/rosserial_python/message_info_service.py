@@ -1,0 +1,1 @@
+/home/emprise/wholearm_ws/wholearm_ws/devel/.private/rosserial_python/lib/rosserial_python/message_info_service.py

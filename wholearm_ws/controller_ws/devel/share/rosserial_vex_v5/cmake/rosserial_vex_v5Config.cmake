@@ -1,0 +1,1 @@
+/home/emprise/wholearm_ws/controller_ws/devel/.private/rosserial_vex_v5/share/rosserial_vex_v5/cmake/rosserial_vex_v5Config.cmake

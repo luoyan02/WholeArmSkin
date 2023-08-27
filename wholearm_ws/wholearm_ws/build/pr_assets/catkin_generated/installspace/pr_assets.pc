@@ -1,0 +1,8 @@
+prefix=/home/emprise/wholearm_ws/wholearm_ws/install
+
+Name: pr_assets
+Description: Description of pr_assets
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

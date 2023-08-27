@@ -1,0 +1,89 @@
+<root BTCPP_format="4" main_tree_to_execute="Default" >
+  <!-- Subtree Includes -->
+  <include path="./helpers.xml" />
+
+<!-- sample capture pose -->
+<!-- ePos: -0.426841, 0.0471398, 0.541644
+eQuat: 0.128091, -0.645437, 0.741367, -0.131828 -->
+
+<!-- sample wiping ready pose -->
+<!-- ePos: -0.496192, -0.129641, 0.535043
+eQuat: 0.0139066, -0.692453, 0.721329, -0.000307623 -->
+
+  <!-- Simple Trajectories -->
+  <BehaviorTree ID="Default">
+    <Sequence>
+      <WorldAddUpdate 
+        urdfUri="package://pr_assets/data/objects/can.urdf" 
+        pos="1.0;0.0;0.73" 
+        quat="1.0;0.0;0.0;0.0" 
+        name="can" />
+      <WorldAddUpdate 
+        urdfUri="package://pr_assets/data/furniture/uw_demo_table.urdf"
+        pos="1.0;0.0;0.0" 
+        quat="0.707107;0.0;0.0;0.707107" 
+        name="table" />
+
+      <AdaGetConfig target="{config}" />
+      <AdaSetLimits velocity="0.5;0.5;0.5;0.5;0.5;0.5;0.5" />
+      <AdaGetEEPose pos="{pos}" quat="{quat}" />
+
+      <!-- Go to Home Position for Bed Bath -->
+      <Debug />
+      <AdaPlanToConfig config="-3.129399903171083; -1.476838938272465; -3.1321325727656135; -2.058816335494173; 0.012653186004049258; -0.9908418667372132; 1.581293975179771" worldCollision="false" traj="{traj}" />
+      <AdaExecuteTrajectory traj="{traj}" />
+
+      <!-- Go to Capture Position for Bed Bath -->
+      <Debug />
+      <AdaPlanToPose pos="-0.426841; 0.0471398; 0.541644" quat="0.128091; -0.645437; 0.741367; -0.131828" worldCollision="false" traj="{traj}" />
+      <AdaExecuteTrajectory traj="{traj}" />
+
+      <RunSegmentationNode serviceName="make_predictions" outputMask="{outputMask}"/>
+      <RunPatchProcessor serviceName="process_patch" outputMask="{outputMask}"/>
+    
+      <!-- Go to Dummy Bathing Start Position -->
+      <AdaPlanToPose pos="-0.496192; -0.129641; 0.535043" quat="0.0139066; -0.692453; 0.721329; -0.000307623" worldCollision="false" traj="{traj}" />
+      <AdaExecuteTrajectory traj="{traj}" />
+
+      <!-- Go to Dummy Bathing End Position -->
+      <Debug />
+      <AdaPlanToConfig config="-2.98591783838532; 0.19190733821683947; -3.075422687881248; -2.196088973882307; -0.17362478726771613; -0.8818642496667346; 1.871209153555214" worldCollision="false" traj="{traj}" />
+      <AdaExecuteTrajectory traj="{traj}" />
+
+      <!-- Go to Home Position for Bed Bath -->
+      <Debug />
+      <AdaPlanToConfig config="-3.129399903171083; -1.476838938272465; -3.1321325727656135; -2.058816335494173; 0.012653186004049258; -0.9908418667372132; 1.581293975179771" worldCollision="false" traj="{traj}" />
+      <AdaExecuteTrajectory traj="{traj}" />
+
+      <!-- Rotation about Z -->
+      <Debug />
+      <AdaPlanToPoseOffset offset="0.0;0.0;0.0" rotation="0.0;0.0;0.5" worldCollision="true" traj="{traj}" />
+      <AdaExecuteTrajectory traj="{traj}" />
+      <Debug />
+      <AdaPlanToPoseOffset offset="0.0;0.0;0.0" rotation="0.0;0.0;-0.5" worldCollision="true" traj="{traj}" />
+      <AdaExecuteTrajectory traj="{traj}" />
+
+      <!-- Test PlanToConfig -->
+      <Debug />
+      <AdaPlanToConfig config="0.0;0.0;0.;0.0;0.3;0.0;0.0;" worldCollision="false" traj="{traj}" />
+      <AdaExecuteTrajectory traj="{traj}" />
+
+
+      <!-- Test PlanToOffset/PoseOffset -->
+      <Debug />
+      <AdaPlanToOffset offset="0.0;0.0;-0.04" worldCollision="true" traj="{traj}" />
+      <AdaExecuteTrajectory traj="{traj}" />
+      <Debug />
+      <AdaPlanToPoseOffset offset="0.0;0.0;0.0" rotation="0.0;0.0;0.1" worldCollision="true" traj="{traj}" />
+      <AdaExecuteTrajectory traj="{traj}" />
+      <Debug />
+      <AdaPlanToPoseOffset offset="0.0;0.0;0.04" rotation="0.0;0.0;-0.1" worldCollision="true" traj="{traj}" />
+      <AdaExecuteTrajectory traj="{traj}" />
+
+
+      <!-- Return to original config -->
+      <Debug />
+      <SubTree ID="MoveToConfig" config="{config}" />
+    </Sequence>
+  </BehaviorTree>
+</root>

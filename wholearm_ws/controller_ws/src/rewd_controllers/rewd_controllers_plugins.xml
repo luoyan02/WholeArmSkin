@@ -1,0 +1,96 @@
+<library path="lib/librewd_controllers">
+  <class name="rewd_controllers/JointGroupPositionController"
+         type="rewd_controllers::JointGroupPositionController"
+         base_class_type="controller_interface::ControllerBase">
+    <description>
+      The JointGroupPositionController tracks position commands. It supports
+      position, velocity, and effort joint interfaces. Position- and velocity-
+      controlled joints track the desired position with PID. Effort-controlled
+      joints track the desired position with PID with a feed-forward term
+      computed via inverse dynamics.
+    </description>
+  </class>
+
+  <class name="rewd_controllers/JointTrajectoryController"
+         type="rewd_controllers::JointTrajectoryController"
+         base_class_type="controller_interface::ControllerBase">
+    <description>
+      The JointTrajectoryController implements the FollowJointTrajectory
+      action for position, velocity, and effort joint interfaces. Position-
+      and velocity-controlled joints track the desired position with PID.
+      Effort-controlled joints track the desired position with PID with a
+      feed-forward term computed via inverse dynamics.
+    </description>
+  </class>
+
+  <class name="rewd_controllers/GravityCompensationController"
+         type="rewd_controllers::GravityCompensationController"
+         base_class_type="controller_interface::ControllerBase">
+    <description>
+      The GravityCompensationController opposes gravity using inverse dynamics.
+      It only supports effort joint interfaces.
+    </description>
+  </class>
+
+  <class name="rewd_controllers/MoveUntilTouchController"
+         type="rewd_controllers::MoveUntilTouchController"
+         base_class_type="controller_interface::ControllerBase">
+    <description>
+      The MoveUntilTouchController implements the FollowJointTrajectory
+      action for position, velocity, and effort joint interfaces. Position-
+      and velocity-controlled joints track the desired position with PID.
+      Effort-controlled joints track the desired position with PID with a
+      feed-forward term computed via inverse dynamics.
+
+      In addition, it claims a Force/Torque sensor and terminates execution
+      as soon as the force threshold specified by the SetForceTorqueThreshold
+      service is exceeded.
+    </description>
+  </class>
+
+  <class name="rewd_controllers/MoveUntilTouchTopicJointTrajectoryController"
+         type="rewd_controllers::MoveUntilTouchTopicJointTrajectoryController"
+         base_class_type="controller_interface::ControllerBase">
+    <description>
+      The MoveUntilTouchTopicJointTrajectoryController is basically the same as the
+      MoveUntilTouchController, but it communicates with the Force/Torque sensor
+      not through hardware interfaces, but rather through ros topics and action
+      clients.
+      
+      It implements the FollowJointTrajectory
+      action for position, velocity, and effort joint interfaces. Position-
+      and velocity-controlled joints track the desired position with PID.
+      Effort-controlled joints track the desired position with PID with a
+      feed-forward term computed via inverse dynamics.
+
+      In addition, it communicates with a Force/Torque sensor and terminates
+      execution as soon as the force threshold specified by the
+      SetForceTorqueThreshold service is exceeded.
+    </description>
+  </class>
+
+  <class name="rewd_controllers/MoveUntilTouchTopicJointGroupCommandController"
+         type="rewd_controllers::MoveUntilTouchTopicJointGroupCommandController"
+         base_class_type="controller_interface::ControllerBase">
+    <description>
+      Rajat ToDo
+    </description>
+  </class>
+
+  <class name="rewd_controllers/JointGroupCommandController"
+         type="rewd_controllers::JointGroupCommandController"
+         base_class_type="controller_interface::ControllerBase">
+    <description>
+      TODO: Add description
+    </description>
+  </class>
+
+  <class name="rewd_controllers/TaskSpaceCompliantController"
+         type="rewd_controllers::TaskSpaceCompliantController"
+         base_class_type="controller_interface::ControllerBase">
+    <description>
+      TODO: Add description
+    </description>
+  </class>
+  
+</library>

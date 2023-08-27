@@ -1,0 +1,102 @@
+# Configuration file for the feeding demo with the Gen3 arm
+#
+# If not otherwise specified:
+#     All units are metric.
+#     All forces and torques are in N and Nm, respectively.
+#     All distances are in m.
+#     All rotations are in radians.
+#     All robot configurations specify 6 joint angles in a list
+#     All positiosn are [x, y, z], and quaternions are [w, x, y, z]
+#
+
+# Main.cpp Params
+watchdogTimeout: 0.05 #50ms until watchdog dies
+visualization:
+  topicName: dart_markers/feeding
+  baseFrameName: map
+
+# Ada Node Params
+velocityLimits:
+  standard: [0.6, 0.6, 0.6, 0.6, 0.6, 0.6]
+  approach: [0.3, 0.3, 0.3, 0.3, 0.3, 0.3]
+
+# FT Sensor Params
+ftSensor:
+  controllerFTThresholdTopic: /move_until_touch_topic_controller/set_forcetorque_threshold/
+  ftTopic: /forque/forqueSensor
+  thresholds:
+    standard:       # used when no other thresholds are specified
+      force: 4
+      torque: 4
+    grabFood:       # active when going down to grab the food
+      force: 15
+      torque: 2
+    afterGrabFood:  # active when going up after food has been grabbed
+      force: 50
+      torque: 2
+
+# Perception parameters
+perception:
+  detectorDataUri: package://pr_assets/data/objects/tag_data_foods.json
+  referenceFrameName: base_link
+  rateSeconds: 0.5
+  timeoutSeconds: 0.5
+
+# Workspace Params
+# Pose relative to robot base
+# workspace:
+#   wheelchair:
+#     urdf: package://pr_assets/data/furniture/wheelchair.urdf
+#     pos: [0.03, 0.0, -0.245]
+#     quat: [1.0, 0.0, 0.0, 0.0]
+#   plate:
+#     urdf: package://pr_assets/data/objects/plate.urdf
+#     pos: [0.24, -0.39, 0.213]
+#     quat: [1.0, 0.0, 0.0, 0.0]
+#   table:
+#     urdf: package://pr_assets/data/furniture/emprise_table_feeding.urdf
+#     pos: [0.24, -0.695, -0.517]
+#     quat: [1.0, 0.0, 0.0, 0.0]
+
+workspace:
+  wheelchair:
+    urdf: package://pr_assets/data/furniture/wheelchair.urdf
+    pos: [0.03, 0.0, -0.305]
+    quat: [1.0, 0.0, 0.0, 0.0]
+  plate:
+    urdf: package://pr_assets/data/objects/plate.urdf
+    pos: [0.24, -0.39, 0.153]
+    quat: [1.0, 0.0, 0.0, 0.0]
+  table:
+    urdf: package://pr_assets/data/furniture/emprise_table_feeding.urdf
+    pos: [0.24, -0.695, -0.577]
+    quat: [1.0, 0.0, 0.0, 0.0]
+
+# Hard-coded Configurations
+configs:
+  wheelchair:
+    # Ready for Transfer
+    in_front_person: [-0.38631117663642467, 1.4616608886676912, 1.0877240964279062, 0.4555658413555599, 1.906789661096325, -1.3934010616221935]
+    # Ready for Acquisition
+    above_plate: [-0.3351977053383868, 0.22778351363059665, -0.8636556846616443, 3.102966697771502, 1.9007481374180457, -1.7883164004137342]
+
+# Hard-coded Action Selection
+action_selection:
+  food_names: ["banana", "cantaloupe", "carrot", "grape", "strawberry"]
+  actions: [5.0, 1.0, 1.0, 3.0, 1.0]
+
+# Acquisition Parameters
+move_above:
+  rotation_agnostic: ["banana", "cantaloupe", "grape", "strawberry"]
+  tsr_bounds: [0.005, 0.005, 0.005, 0.01, 0.01, 0.01]
+  height: 0.07
+move_into:
+  overshoot: -0.025 # how far to plan past food surface
+move_out:
+  offset: [0.0, 0.0, 0.05]
+
+# Transfer Parameters
+move_face:
+  undershoot: 0.08
+move_away:
+  offset: [0.0, -0.05, 0.0]

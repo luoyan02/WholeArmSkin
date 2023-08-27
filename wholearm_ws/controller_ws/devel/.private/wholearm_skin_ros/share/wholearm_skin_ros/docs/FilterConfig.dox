@@ -1,0 +1,8 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~order" : \b [int] Order of the filter min: 1, default: 5, max: 10
+- \b "~wn" : \b [double] Critical Frequency min: 0.1, default: 1.5, max: 20.0
+- \b "~fs" : \b [double] Sampling frequency min: 1.0, default: 60.0, max: 100.0
+

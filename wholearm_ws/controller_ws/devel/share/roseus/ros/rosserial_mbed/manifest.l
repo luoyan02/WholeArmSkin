@@ -1,0 +1,1 @@
+/home/emprise/wholearm_ws/controller_ws/devel/.private/rosserial_mbed/share/roseus/ros/rosserial_mbed/manifest.l

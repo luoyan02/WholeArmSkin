@@ -1,0 +1,18 @@
+[100%] Built target pr_tsr
+[36mInstall the project...[0m
+-- Install configuration: ""
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/lib/libpr_tsr.a
+-- Up-to-date: /home/emprise/wholearm_ws/controller_ws/devel/include
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/include/pr_tsr
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/include/pr_tsr/glass.hpp
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/include/pr_tsr/table.hpp
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/include/pr_tsr/valve.hpp
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/include/pr_tsr/food_item.hpp
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/include/pr_tsr/plate.hpp
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/include/pr_tsr/fuze.hpp
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/include/pr_tsr/block_bin.hpp
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/include/pr_tsr/can.hpp
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/include/pr_tsr/block.hpp
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/pr_tsr/cmake/pr_tsrConfig.cmake
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/pr_tsr/cmake/pr_tsrConfig-noconfig.cmake
+-- Installing: /home/emprise/wholearm_ws/controller_ws/devel/share/pr_tsr/package.xml

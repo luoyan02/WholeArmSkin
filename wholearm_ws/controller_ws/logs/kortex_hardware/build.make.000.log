@@ -1,0 +1,6 @@
+[35m[1mScanning dependencies of target kortex_hardware[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/kortex_hardware.dir/src/main.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/kortex_hardware.dir/src/Gen3Robot.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/kortex_hardware.dir/src/LowPassFilter.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/emprise/wholearm_ws/controller_ws/devel/.private/kortex_hardware/lib/kortex_hardware/kortex_hardware[0m
+[100%] Built target kortex_hardware

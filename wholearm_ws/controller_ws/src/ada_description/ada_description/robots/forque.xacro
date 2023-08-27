@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!-- j2_6n refers to jaco v2 6DOF non-spherical -->
+
+
+<root xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:macro name="forque" params="forque_parent prefix:=j2n6s200">
+
+    <link name="j2n6s200_forque">
+      <visual>
+        <geometry>
+            <mesh filename="package://ada_description/meshes/forque_kinova.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="carbon_fiber">
+          <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
+        </material>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://ada_description/meshes/collision_forque_kinova.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+    <joint name="j2n6s200_joint_forque" type="fixed">
+      <parent link="${forque_parent}"/>
+      <child link="j2n6s200_forque"/>
+      <axis xyz="0 0 1"/>
+      <origin rpy="3.14 0 0" xyz="-0.003 -0.0013 0.065"/>
+      <limit effort="2000" lower="0" upper="2" velocity="1"/>
+    </joint>
+
+    <link name="j2n6s200_forque_end_effector">
+  </link>
+    <joint name="j2n6s200_joint_forque_end_effector" type="fixed">
+      <parent link="j2n6s200_forque"/>
+      <child link="j2n6s200_forque_end_effector"/>
+      <axis xyz="0 0 0"/>
+      <limit effort="2000" lower="0" upper="0" velocity="1"/>
+      <origin rpy="3.1415 0 1.57075" xyz="0.007 0 -0.093"/>
+    </joint>
+
+    <link name="j2n6s200_forque_tip">
+  </link>
+    <joint name="j2n6s200_joint_forque_tip" type="fixed">
+      <parent link="j2n6s200_forque"/>
+      <child link="j2n6s200_forque_tip"/>
+      <axis xyz="0 0 0"/>
+      <limit effort="2000" lower="0" upper="0" velocity="1"/>
+      <!-- Rotation consistent with pointers of forque: -->
+      <origin rpy="2.6415 0 1.57075" xyz="0.007 0 -0.093"/>
+    </joint>
+
+  </xacro:macro>
+
+
+</root>

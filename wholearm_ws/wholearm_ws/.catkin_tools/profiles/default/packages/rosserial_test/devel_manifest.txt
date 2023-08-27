@@ -1,0 +1,5 @@
+rosserial_noetic/rosserial_test
+/home/emprise/wholearm_ws/wholearm_ws/devel/.private/rosserial_test/cmake.lock /home/emprise/wholearm_ws/wholearm_ws/devel/./cmake.lock
+/home/emprise/wholearm_ws/wholearm_ws/devel/.private/rosserial_test/lib/pkgconfig/rosserial_test.pc /home/emprise/wholearm_ws/wholearm_ws/devel/lib/pkgconfig/rosserial_test.pc
+/home/emprise/wholearm_ws/wholearm_ws/devel/.private/rosserial_test/share/rosserial_test/cmake/rosserial_testConfig.cmake /home/emprise/wholearm_ws/wholearm_ws/devel/share/rosserial_test/cmake/rosserial_testConfig.cmake
+/home/emprise/wholearm_ws/wholearm_ws/devel/.private/rosserial_test/share/rosserial_test/cmake/rosserial_testConfig-version.cmake /home/emprise/wholearm_ws/wholearm_ws/devel/share/rosserial_test/cmake/rosserial_testConfig-version.cmake

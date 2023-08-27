@@ -1,0 +1,2 @@
+rosserial_noetic/rosserial
+/home/emprise/wholearm_ws/wholearm_ws/devel/.private/rosserial/cmake.lock /home/emprise/wholearm_ws/wholearm_ws/devel/./cmake.lock

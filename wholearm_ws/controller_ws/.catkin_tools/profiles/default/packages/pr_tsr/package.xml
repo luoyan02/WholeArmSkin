@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>pr_tsr</name>
+  <version>0.1.0</version>
+  <description>Collection of predefined TSRs for use with aikido</description>
+  <maintainer email="cliddick@cmu.edu">Clint Liddick</maintainer>
+  <author email="cliddick@cmu.edu">Clint Liddick</author>
+  <license>UNRELEASED</license>
+  <depend>aikido</depend>
+  <depend>dartsim</depend>
+  <depend>eigen</depend>
+  <!-- Workaround to build DART with optional features enabled. -->
+  <depend>nlopt</depend>
+
+  <doc_depend>doxygen</doc_depend>
+
+  <!-- This is required by REP-136. -->
+  <exec_depend>catkin</exec_depend>
+  <buildtool_depend>cmake</buildtool_depend>
+  <buildtool_depend>clang-format</buildtool_depend>
+  <export>
+    <build_type>cmake</build_type>
+  </export>
+</package>

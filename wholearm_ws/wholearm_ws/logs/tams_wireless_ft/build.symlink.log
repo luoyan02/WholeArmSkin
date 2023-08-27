@@ -1,0 +1,4 @@
+Symlinking /home/emprise/wholearm_ws/wholearm_ws/devel/lib/tams_wireless_ft/tams_wireless_ft
+Symlinking /home/emprise/wholearm_ws/wholearm_ws/devel/lib/pkgconfig/tams_wireless_ft.pc
+Symlinking /home/emprise/wholearm_ws/wholearm_ws/devel/share/tams_wireless_ft/cmake/tams_wireless_ftConfig-version.cmake
+Symlinking /home/emprise/wholearm_ws/wholearm_ws/devel/share/tams_wireless_ft/cmake/tams_wireless_ftConfig.cmake

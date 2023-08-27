@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="launch_rviz" default="false" />
+  <arg name="ip_address" default="192.168.2.3" />
+
+
+  <!-- 
+  - Uploads the robot_description (lwr + c5hand+ rack) to the param server.
+
+  2016.12.13 - fnh: created
+  -->
+  <remap from="/wireless_ft/wrench_1" to="/forque/forqueSensor"/>
+
+  <node name="wireless_ft" pkg="tams_wireless_ft" type="tams_wireless_ft" output="screen" >
+    <param name="ip_address" value="$(arg ip_address)" />
+    <param name="telnet_port" value="23" />
+    <param name="udp_port" value="49152" />
+
+    <param name="rate" value="125" />
+    <param name="oversample" value="32" />
+    <param name="active_channels" value="123" type="string" />
+
+    <param name="reference_frame" value="world" />
+    <param name="tf_prefix" value="wireless_ft_" />
+
+    <param name="verbose" value="1" />
+  </node>
+
+
+  <!-- 
+  <node name="wireless_ft_frame_publisher" 
+        pkg="tf"
+        type="static_transform_publisher"
+        args="0 0 0  0 0 0 world wireless_ft_frame 1" />
+  -->
+
+  <node name="reset_ft_bias" pkg="tams_wireless_ft" type="reset_ft_bias.py" output="screen" />
+
+  <!-- rviz --> 
+  <group if="$(arg launch_rviz)">
+    <node pkg="rviz" type="rviz" name="rviz" 
+      args="-d $(find tams_wireless_ft)/config/wireless_ft.rviz" >
+    </node>
+  </group>
+ 
+</launch>

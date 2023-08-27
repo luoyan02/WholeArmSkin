@@ -1,0 +1,23 @@
+[  2%] Built target lexy_file
+[ 45%] Built target behaviortree_cpp
+[ 48%] Built target t01_first_tree_dynamic
+[ 50%] Built target movebase_node_dyn
+[ 52%] Built target bt3_log_cat
+[ 57%] Built target bt_sample_nodes
+[ 60%] Built target bt3_recorder
+[ 62%] Built target bt3_plugin_manifest
+[ 64%] Built target dummy_nodes_dyn
+[ 66%] Built target crossdoor_nodes_dyn
+[ 69%] Built target t02_basic_ports
+[ 72%] Built target t03_generic_ports
+[ 73%] Built target t01_first_tree_static
+[ 76%] Built target ex04_waypoints
+[ 78%] Built target t05_crossdoor
+[ 81%] Built target t04_reactive_sequence
+[ 84%] Built target t09_scripting
+[ 86%] Built target ex01_wrap_legacy
+[ 89%] Built target ex03_ncurses_manual_selector
+[ 92%] Built target t07_load_multiple_xml
+[ 96%] Built target ex02_runtime_ports
+[ 98%] Built target t08_additional_node_args
+[100%] Built target t06_subtree_port_remapping

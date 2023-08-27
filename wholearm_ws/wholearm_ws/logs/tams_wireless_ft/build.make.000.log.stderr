@@ -1,0 +1,28 @@
+[01m[K/home/emprise/wholearm_ws/wholearm_ws/src/tams_wireless_ft/src/wireless_ft.cpp:[m[K In member function ‘[01m[Kint WirelessFT::udpStartStreaming()[m[K’:
+[01m[K/home/emprise/wholearm_ws/wholearm_ws/src/tams_wireless_ft/src/wireless_ft.cpp:713:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  713 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/emprise/wholearm_ws/wholearm_ws/src/tams_wireless_ft/src/wireless_ft.cpp:[m[K In member function ‘[01m[Kint WirelessFT::udpStopStreaming()[m[K’:
+[01m[K/home/emprise/wholearm_ws/wholearm_ws/src/tams_wireless_ft/src/wireless_ft.cpp:737:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  737 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/emprise/wholearm_ws/wholearm_ws/src/tams_wireless_ft/src/wireless_ft.cpp:[m[K In member function ‘[01m[Kint WirelessFT::udpPing()[m[K’:
+[01m[K/home/emprise/wholearm_ws/wholearm_ws/src/tams_wireless_ft/src/wireless_ft.cpp:761:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  761 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/emprise/wholearm_ws/wholearm_ws/src/tams_wireless_ft/src/wireless_ft.cpp:[m[K In member function ‘[01m[Kint WirelessFT::udpResetTelnetSocket()[m[K’:
+[01m[K/home/emprise/wholearm_ws/wholearm_ws/src/tams_wireless_ft/src/wireless_ft.cpp:785:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  785 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/emprise/wholearm_ws/wholearm_ws/src/tams_wireless_ft/src/wireless_ft.cpp:[m[K In member function ‘[01m[Kint WirelessFT::decodeDataPacket(char*, unsigned int)[m[K’:
+[01m[K/home/emprise/wholearm_ws/wholearm_ws/src/tams_wireless_ft/src/wireless_ft.cpp:958:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  958 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/emprise/wholearm_ws/wholearm_ws/src/tams_wireless_ft/src/wireless_ft.cpp:[m[K In member function ‘[01m[Kbool WirelessFT::serviceCallback(std_srvs::Empty::Request&, std_srvs::Empty::Response&)[m[K’:
+[01m[K/home/emprise/wholearm_ws/wholearm_ws/src/tams_wireless_ft/src/wireless_ft.cpp:993:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  993 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/emprise/wholearm_ws/wholearm_ws/src/tams_wireless_ft/src/wireless_ft.cpp:[m[K In member function ‘[01m[Kint WirelessFT::telnetDisconnect()[m[K’:
+[01m[K/home/emprise/wholearm_ws/wholearm_ws/src/tams_wireless_ft/src/wireless_ft.cpp:519:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  519 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K

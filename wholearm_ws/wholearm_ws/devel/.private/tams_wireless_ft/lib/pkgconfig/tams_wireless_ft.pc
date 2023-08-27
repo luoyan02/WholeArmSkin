@@ -1,0 +1,8 @@
+prefix=/home/emprise/wholearm_ws/wholearm_ws/devel/.private/tams_wireless_ft
+
+Name: tams_wireless_ft
+Description: Description of tams_wireless_ft
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

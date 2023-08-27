@@ -1,0 +1,5 @@
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/lib/pkgconfig/rosserial_chibios.pc
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/share/rosserial_chibios/cmake.lock
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/share/rosserial_chibios/make_libraries.py
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/share/rosserial_chibios/cmake/rosserial_chibiosConfig.cmake
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/share/rosserial_chibios/cmake/rosserial_chibiosConfig-version.cmake

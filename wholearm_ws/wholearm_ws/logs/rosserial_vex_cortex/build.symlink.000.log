@@ -1,0 +1,6 @@
+Symlinking /home/emprise/wholearm_ws/wholearm_ws/devel/lib/pkgconfig/rosserial_vex_cortex.pc
+Symlinking /home/emprise/wholearm_ws/wholearm_ws/devel/lib/python3/dist-packages/rosserial_vex_cortex/__init__.py
+Symlinking /home/emprise/wholearm_ws/wholearm_ws/devel/share/rosserial_vex_cortex/cmake.lock
+Symlinking /home/emprise/wholearm_ws/wholearm_ws/devel/share/rosserial_vex_cortex/make_libraries.py
+Symlinking /home/emprise/wholearm_ws/wholearm_ws/devel/share/rosserial_vex_cortex/cmake/rosserial_vex_cortexConfig.cmake
+Symlinking /home/emprise/wholearm_ws/wholearm_ws/devel/share/rosserial_vex_cortex/cmake/rosserial_vex_cortexConfig-version.cmake

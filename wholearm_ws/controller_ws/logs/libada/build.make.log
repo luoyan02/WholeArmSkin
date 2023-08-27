@@ -1,0 +1,28 @@
+[35m[1mScanning dependencies of target libada[0m
+[35m[1mScanning dependencies of target googletest[0m
+[  5%] [34m[1mCreating directories for 'googletest'[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/libada.dir/src/AdaHand.cpp.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/libada.dir/src/Ada.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/libada.dir/src/util.cpp.o[0m
+[ 26%] [34m[1mPerforming download step (git clone) for 'googletest'[0m
+-- googletest download command succeeded.  See also /home/emprise/wholearm_ws/controller_ws/build/libada/googletest-prefix/src/googletest-stamp/googletest-download-*.log
+[ 36%] [34m[1mNo patch step for 'googletest'[0m
+[ 36%] [34m[1mNo update step for 'googletest'[0m
+[ 42%] [34m[1mPerforming configure step for 'googletest'[0m
+-- googletest configure command succeeded.  See also /home/emprise/wholearm_ws/controller_ws/build/libada/googletest-prefix/src/googletest-stamp/googletest-configure-*.log
+[ 47%] [34m[1mPerforming build step for 'googletest'[0m
+-- googletest build command succeeded.  See also /home/emprise/wholearm_ws/controller_ws/build/libada/googletest-prefix/src/googletest-stamp/googletest-build-*.log
+[ 52%] [34m[1mNo install step for 'googletest'[0m
+[ 57%] [34m[1mCompleted 'googletest'[0m
+[ 57%] Built target googletest
+[ 63%] [32m[1mLinking CXX shared library libada.so[0m
+[ 63%] Built target libada
+[35m[1mScanning dependencies of target adapy[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/adapy.dir/python/adapy/adapy.cpp.o[0m
+[ 84%] [32mBuilding CXX object CMakeFiles/adapy.dir/python/adapy/aikido_bindings.cpp.o[0m
+[ 84%] [32mBuilding CXX object CMakeFiles/adapy.dir/python/adapy/ada_bindings.cpp.o[0m
+[ 84%] [32mBuilding CXX object CMakeFiles/adapy.dir/python/adapy/ik_bindings.cpp.o[0m
+[ 94%] [32mBuilding CXX object CMakeFiles/adapy.dir/python/adapy/dart_bindings.cpp.o[0m
+[ 94%] [32mBuilding CXX object CMakeFiles/adapy.dir/python/adapy/pr_tsr_bindings.cpp.o[0m
+[100%] [32m[1mLinking CXX shared module adapy.cpython-38-x86_64-linux-gnu.so[0m
+[100%] Built target adapy

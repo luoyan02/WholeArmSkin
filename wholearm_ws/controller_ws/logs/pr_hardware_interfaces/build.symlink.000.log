@@ -1,0 +1,4 @@
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/lib/libpr_hardware_interfaces.so
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/lib/pkgconfig/pr_hardware_interfaces.pc
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/share/pr_hardware_interfaces/cmake/pr_hardware_interfacesConfig-version.cmake
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/share/pr_hardware_interfaces/cmake/pr_hardware_interfacesConfig.cmake

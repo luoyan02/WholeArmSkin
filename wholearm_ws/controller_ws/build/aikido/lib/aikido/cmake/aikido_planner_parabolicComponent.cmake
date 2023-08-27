@@ -1,0 +1,2 @@
+set("aikido_planner_parabolic_DEPENDENCIES" common;planner;constraint;statespace;trajectory)
+set("aikido_planner_parabolic_LIBRARIES" aikido_planner_parabolic)

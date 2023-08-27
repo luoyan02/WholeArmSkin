@@ -1,0 +1,4 @@
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/lib/libtrigger_controller.so
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/lib/pkgconfig/trigger_controller.pc
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/share/trigger_controller/cmake/trigger_controllerConfig.cmake
+Symlinking /home/emprise/wholearm_ws/controller_ws/devel/share/trigger_controller/cmake/trigger_controllerConfig-version.cmake

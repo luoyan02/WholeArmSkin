@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.tcc": "cpp",
+        "*.ipp": "cpp"
+    },
+    "cmake.sourceDirectory": "/home/emprise/wholearm_ws/controller_ws/src/BehaviorTree.CPP/tests"
+}

@@ -1,0 +1,1 @@
+/home/emprise/wholearm_ws/controller_ws/devel/.private/wholearm_skin_ros/include/wholearm_skin_ros/TaxelData.h

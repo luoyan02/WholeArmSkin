@@ -1,0 +1,19 @@
+[  2%] Built target aikido_external_hauserparabolicsmoother
+[  4%] Built target aikido_external_kunzretimer
+[  8%] Built target aikido_common
+[ 18%] Built target aikido_statespace
+[ 25%] Built target aikido_distance
+[ 41%] Built target aikido_constraint
+[ 43%] Built target aikido_trajectory
+[ 45%] Built target aikido_io
+[ 47%] Built target aikido_planner_parabolic
+[ 52%] Built target aikido_control
+[ 52%] Built target aikido_planner_kunzretimer
+[ 68%] Built target aikido_planner
+[ 72%] Built target aikido_perception
+[ 77%] Built target aikido_control_ros
+[ 83%] Built target aikido_rviz
+[ 89%] Built target aikido_planner_ompl
+[ 95%] Built target aikido_planner_vectorfield
+[100%] Built target aikido_robot
+[100%] Built target aikido_robot_ros

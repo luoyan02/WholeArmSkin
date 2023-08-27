@@ -1,0 +1,8 @@
+prefix=/home/emprise/wholearm_ws/controller_ws/install
+
+Name: kortex_hardware
+Description: Description of kortex_hardware
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: std_msgs roscpp controller_manager hardware_interface sensor_msgs
