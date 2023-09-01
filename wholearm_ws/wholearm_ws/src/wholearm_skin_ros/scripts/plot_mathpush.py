@@ -33,15 +33,13 @@ sns.despine()
 plt.legend(['Math Model', 'Measured Capacitance'], loc = 'upper right', bbox_to_anchor=(1, 1), frameon=False)
 
 plt.xlim([0.97, 1.57])
-plt.ylim([3.75, 5.75])
-plt.tight_layout(pad=1)
+plt.ylim([3.75, 5.78])
+plt.tight_layout(pad=0)
 ax.xaxis.set_major_locator(plt.NullLocator())
 ax.yaxis.set_major_locator(plt.NullLocator())
 
-ax.plot(1.57, 3.75, marker="4", ms=10, color="k",
-    transform=ax.get_yaxis_transform(), clip_on=False)
-ax.plot(0.97, 5.75, marker="2", ms=10, color="k",
-    transform=ax.get_xaxis_transform(), clip_on=False)
+ax.plot(1.57, 3.75, marker="4", ms=10, color="k", clip_on=False)
+ax.plot(0.97, 5.78, marker="2", ms=10, color="k", clip_on=False)
 
 desired_ticks = [1.00, 1.55]
 ax.set_xticks(desired_ticks)
