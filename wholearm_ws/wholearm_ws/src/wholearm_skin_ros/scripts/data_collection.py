@@ -15,7 +15,7 @@ import threading
 # Declraing a lock
 lock = threading.Lock()
 taxel = 0
-filename = "0517_noshield_12"
+filename = "compress0"
 
 from std_srvs.srv import SetBool, SetBoolResponse
 
