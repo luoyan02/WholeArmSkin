@@ -1,8 +1,0 @@
-prefix=/home/emprise/wholearm_ws/controller_ws/devel/.private/trigger_controller
-
-Name: trigger_controller
-Description: Description of trigger_controller
-Version: 0.0.0
-Cflags: -I/home/emprise/wholearm_ws/controller_ws/src/pr_ros_controllers/trigger_controller/include
-Libs: -L${prefix}/lib -ltrigger_controller
-Requires: actionlib actionlib_msgs controller_interface pr_control_msgs pr_hardware_interfaces realtime_tools

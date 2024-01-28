@@ -1,6 +1,0 @@
-rewd_controllers
-/home/emprise/wholearm_ws/controller_ws/devel/.private/rewd_controllers/cmake.lock /home/emprise/wholearm_ws/controller_ws/devel/./cmake.lock
-/home/emprise/wholearm_ws/controller_ws/devel/.private/rewd_controllers/lib/librewd_controllers.so /home/emprise/wholearm_ws/controller_ws/devel/lib/librewd_controllers.so
-/home/emprise/wholearm_ws/controller_ws/devel/.private/rewd_controllers/lib/pkgconfig/rewd_controllers.pc /home/emprise/wholearm_ws/controller_ws/devel/lib/pkgconfig/rewd_controllers.pc
-/home/emprise/wholearm_ws/controller_ws/devel/.private/rewd_controllers/share/rewd_controllers/cmake/rewd_controllersConfig.cmake /home/emprise/wholearm_ws/controller_ws/devel/share/rewd_controllers/cmake/rewd_controllersConfig.cmake
-/home/emprise/wholearm_ws/controller_ws/devel/.private/rewd_controllers/share/rewd_controllers/cmake/rewd_controllersConfig-version.cmake /home/emprise/wholearm_ws/controller_ws/devel/share/rewd_controllers/cmake/rewd_controllersConfig-version.cmake

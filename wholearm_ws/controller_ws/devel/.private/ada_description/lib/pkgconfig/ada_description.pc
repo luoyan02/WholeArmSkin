@@ -1,8 +1,0 @@
-prefix=/home/emprise/wholearm_ws/controller_ws/devel/.private/ada_description
-
-Name: ada_description
-Description: Description of ada_description
-Version: 0.1.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

@@ -1,1 +1,0 @@
-/home/emprise/wholearm_ws/controller_ws/devel/.private/kortex_hardware/share/kortex_hardware/cmake/kortex_hardwareConfig.cmake

@@ -1,6 +1,0 @@
-<launch>
-<include file="$(find yui_bathing)/launch/viz.launch"/>
-<env name="ROS_PACKAGE_PATH" value="/home/emprise/wholearm_ws/wholearm_ws:${ROS_PACKAGE_PATH}"/>
-<include file="$(find wholearm_skin_ros)/launch/vizual.launch"/>
-<node name="rviz" pkg="rviz" type="rviz" args="-d $(find yui_bathing)/config/skin.rviz"/>
-</launch>

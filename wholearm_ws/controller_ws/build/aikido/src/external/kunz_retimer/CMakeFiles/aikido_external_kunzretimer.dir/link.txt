@@ -1,2 +1,0 @@
-/usr/bin/ar qc libaikido_external_kunzretimer.a  CMakeFiles/aikido_external_kunzretimer.dir/Path.cpp.o CMakeFiles/aikido_external_kunzretimer.dir/Trajectory.cpp.o
-/usr/bin/ranlib libaikido_external_kunzretimer.a

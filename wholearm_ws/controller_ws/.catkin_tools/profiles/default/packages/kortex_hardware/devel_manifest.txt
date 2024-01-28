@@ -1,6 +1,0 @@
-kortex_hardware
-/home/emprise/wholearm_ws/controller_ws/devel/.private/kortex_hardware/cmake.lock /home/emprise/wholearm_ws/controller_ws/devel/./cmake.lock
-/home/emprise/wholearm_ws/controller_ws/devel/.private/kortex_hardware/lib/kortex_hardware/kortex_hardware /home/emprise/wholearm_ws/controller_ws/devel/lib/kortex_hardware/kortex_hardware
-/home/emprise/wholearm_ws/controller_ws/devel/.private/kortex_hardware/lib/pkgconfig/kortex_hardware.pc /home/emprise/wholearm_ws/controller_ws/devel/lib/pkgconfig/kortex_hardware.pc
-/home/emprise/wholearm_ws/controller_ws/devel/.private/kortex_hardware/share/kortex_hardware/cmake/kortex_hardwareConfig-version.cmake /home/emprise/wholearm_ws/controller_ws/devel/share/kortex_hardware/cmake/kortex_hardwareConfig-version.cmake
-/home/emprise/wholearm_ws/controller_ws/devel/.private/kortex_hardware/share/kortex_hardware/cmake/kortex_hardwareConfig.cmake /home/emprise/wholearm_ws/controller_ws/devel/share/kortex_hardware/cmake/kortex_hardwareConfig.cmake

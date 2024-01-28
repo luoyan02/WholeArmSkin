@@ -1,2 +1,0 @@
-/usr/bin/ar qc libpr_tsr.a  
-/usr/bin/ranlib libpr_tsr.a

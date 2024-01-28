@@ -1,2 +1,0 @@
-set("aikido_planner_kunzretimer_DEPENDENCIES" common;planner;constraint;statespace;trajectory)
-set("aikido_planner_kunzretimer_LIBRARIES" aikido_planner_kunzretimer)

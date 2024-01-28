@@ -1,5 +1,0 @@
-Symlinking /home/emprise/wholearm_ws/controller_ws/devel/lib/pkgconfig/rosserial_xbee.pc
-Symlinking /home/emprise/wholearm_ws/controller_ws/devel/lib/python3/dist-packages/xbee/__init__.py
-Symlinking /home/emprise/wholearm_ws/controller_ws/devel/lib/python3/dist-packages/rosserial_xbee/__init__.py
-Symlinking /home/emprise/wholearm_ws/controller_ws/devel/share/rosserial_xbee/cmake/rosserial_xbeeConfig.cmake
-Symlinking /home/emprise/wholearm_ws/controller_ws/devel/share/rosserial_xbee/cmake/rosserial_xbeeConfig-version.cmake

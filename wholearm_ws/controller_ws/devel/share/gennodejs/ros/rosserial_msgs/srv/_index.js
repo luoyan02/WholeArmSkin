@@ -1,1 +1,0 @@
-/home/emprise/wholearm_ws/controller_ws/devel/.private/rosserial_msgs/share/gennodejs/ros/rosserial_msgs/srv/_index.js

@@ -1,1 +1,0 @@
-/home/emprise/wholearm_ws/controller_ws/devel/.private/rosserial_arduino/share/gennodejs/ros/rosserial_arduino/_index.js

@@ -1,1 +1,0 @@
-/home/emprise/wholearm_ws/controller_ws/devel/.private/rosserial_chibios/share/rosserial_chibios/cmake/rosserial_chibiosConfig-version.cmake

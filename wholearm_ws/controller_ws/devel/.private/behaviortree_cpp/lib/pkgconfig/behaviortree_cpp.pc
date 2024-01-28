@@ -1,8 +1,0 @@
-prefix=/home/emprise/wholearm_ws/controller_ws/devel/.private/behaviortree_cpp
-
-Name: behaviortree_cpp
-Description: Description of behaviortree_cpp
-Version: 4.0.1
-Cflags: -I/home/emprise/wholearm_ws/controller_ws/src/BehaviorTree.CPP/include
-Libs: -L${prefix}/lib -lbehaviortree_cpp
-Requires: roslib

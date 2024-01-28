@@ -1,5 +1,0 @@
-[01m[K/home/emprise/wholearm_ws/controller_ws/src/yui_bathing/src/nodes/bathingNodes.cpp:[m[K In function ‘[01m[Kvoid feeding::nodes::registerNodes(BT::BehaviorTreeFactory&, ros::NodeHandle&, ada::Ada&)[m[K’:
-[01m[K/home/emprise/wholearm_ws/controller_ws/src/yui_bathing/src/nodes/bathingNodes.cpp:92:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krobot[m[K’ [[01;35m[K-Wunused-parameter[m[K]
-   92 |                               ros::NodeHandle & /*&nh */, [01;35m[Kada::Ada &robot[m[K)
-      |                                                           [01;35m[K~~~~~~~~~~^~~~~[m[K
-/usr/bin/ld: warning: libfcl.so.0.5, needed by /usr/lib/x86_64-linux-gnu/libdart.so.6.9.2, may conflict with libfcl.so.0.6

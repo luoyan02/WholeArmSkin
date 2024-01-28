@@ -1,5 +1,0 @@
-pr_assets
-/home/emprise/wholearm_ws/controller_ws/devel/.private/pr_assets/cmake.lock /home/emprise/wholearm_ws/controller_ws/devel/./cmake.lock
-/home/emprise/wholearm_ws/controller_ws/devel/.private/pr_assets/lib/pkgconfig/pr_assets.pc /home/emprise/wholearm_ws/controller_ws/devel/lib/pkgconfig/pr_assets.pc
-/home/emprise/wholearm_ws/controller_ws/devel/.private/pr_assets/share/pr_assets/cmake/pr_assetsConfig-version.cmake /home/emprise/wholearm_ws/controller_ws/devel/share/pr_assets/cmake/pr_assetsConfig-version.cmake
-/home/emprise/wholearm_ws/controller_ws/devel/.private/pr_assets/share/pr_assets/cmake/pr_assetsConfig.cmake /home/emprise/wholearm_ws/controller_ws/devel/share/pr_assets/cmake/pr_assetsConfig.cmake

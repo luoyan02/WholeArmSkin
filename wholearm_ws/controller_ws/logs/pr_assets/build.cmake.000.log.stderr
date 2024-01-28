@@ -1,5 +1,0 @@
-CMake Warning (dev) at CMakeLists.txt:26 (message):
-  Unable to find openrave_catkin.  You will have to manually add these models
-  to your OpenRAVE_DATA path.
-This warning is for project developers.  Use -Wno-dev to suppress it.
-

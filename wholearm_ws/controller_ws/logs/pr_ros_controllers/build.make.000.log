@@ -1,7 +1,0 @@
-[35m[1mScanning dependencies of target pr_ros_controllers[0m
-[ 60%] [32mBuilding CXX object CMakeFiles/pr_ros_controllers.dir/src/joint_mode_controller.cpp.o[0m
-[ 60%] [32mBuilding CXX object CMakeFiles/pr_ros_controllers.dir/src/joint_group_position_controller.cpp.o[0m
-[ 60%] [32mBuilding CXX object CMakeFiles/pr_ros_controllers.dir/src/joint_group_velocity_controller.cpp.o[0m
-[ 80%] [32mBuilding CXX object CMakeFiles/pr_ros_controllers.dir/src/joint_group_effort_controller.cpp.o[0m
-[100%] [32m[1mLinking CXX shared library /home/emprise/wholearm_ws/controller_ws/devel/.private/pr_ros_controllers/lib/libpr_ros_controllers.so[0m
-[100%] Built target pr_ros_controllers

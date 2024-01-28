@@ -1,8 +1,0 @@
-prefix=/home/emprise/wholearm_ws/controller_ws/devel/.private/kortex_hardware
-
-Name: kortex_hardware
-Description: Description of kortex_hardware
-Version: 0.0.0
-Cflags: -I/home/emprise/wholearm_ws/controller_ws/src/kortex_hardware/include
-Libs: -L${prefix}/lib 
-Requires: std_msgs roscpp controller_manager hardware_interface sensor_msgs

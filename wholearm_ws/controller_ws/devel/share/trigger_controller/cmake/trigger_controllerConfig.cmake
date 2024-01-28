@@ -1,1 +1,0 @@
-/home/emprise/wholearm_ws/controller_ws/devel/.private/trigger_controller/share/trigger_controller/cmake/trigger_controllerConfig.cmake

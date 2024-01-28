@@ -1,1 +1,0 @@
-/home/emprise/wholearm_ws/controller_ws/devel/.private/rosserial_arduino/share/roseus/ros/rosserial_arduino/manifest.l

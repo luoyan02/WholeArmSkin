@@ -1,5 +1,0 @@
-Symlinking /home/emprise/wholearm_ws/controller_ws/devel/lib/pkgconfig/rosserial_embeddedlinux.pc
-Symlinking /home/emprise/wholearm_ws/controller_ws/devel/lib/rosserial_embeddedlinux/cmake.lock
-Symlinking /home/emprise/wholearm_ws/controller_ws/devel/lib/rosserial_embeddedlinux/make_libraries.py
-Symlinking /home/emprise/wholearm_ws/controller_ws/devel/share/rosserial_embeddedlinux/cmake/rosserial_embeddedlinuxConfig-version.cmake
-Symlinking /home/emprise/wholearm_ws/controller_ws/devel/share/rosserial_embeddedlinux/cmake/rosserial_embeddedlinuxConfig.cmake
